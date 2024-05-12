@@ -44,7 +44,7 @@
               </ul>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link">Profile</a>
+              <a class="nav-link" href="/profile">Profile</a>
             </li>
           </ul>
           <div class="d-flex">
@@ -74,13 +74,13 @@
       </div>
     </nav>
 
-    <v-main class="mt-16 ">
+    <v-main>
       <router-view />
     </v-main>
 
     <footer class="pt-10 border-top">
       <div class="container">
-        <div class="d-flex justify-content-between flex-wrap">
+        <div class="d-flex pt-8 pb-10 justify-content-between flex-wrap">
           <div class="mb-3">
             <h5>CONTENT</h5>
             <a href="#" class="nav-link"> Discover </a>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container mt-16">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-start">
           <div class="mt-10">
@@ -15,20 +15,21 @@
               type and scrambled it.
             </p>
           
-          <div class="my-4">
+          <div class="my-10">
             <button class="btn btn-primary px-5 py-3">Explore more</button>
             <button
               class="btn btn-transparent text-white d-inline-flex align-items-center py-3 mx-2"
             >
               <i class="fa-solid fa-star fa-lg mx-2"></i>
-              Features Product
+              Featured Projects
             </button>
           </div>
         </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
+        <!-- https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png -->
           <img
-            src="https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png"
+            src="../assets/img/me-1.png"
             alt="Hero Image"
             width="100%"
           />
@@ -43,21 +44,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../assets/img/pj-cu.png"
+              src="../assets/img/pj-4.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504"
+              src="../assets/img/pj-2.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504"
+              src="../assets/img/pj-3.jpg"
               class="d-block w-100 carousel-image"
               alt="..."
             />
@@ -86,12 +87,12 @@
 
     <div class="container py-5 my-16">
       <div class="text-center pb-4 mt-5">
-        <h6>WHY CHOOSE US</h6>
+        <h6>WHY CHOOSE ME</h6>
         <h1>
           <h1 class="text-primary d-inline">Creativity</h1>
           is no limit
         </h1>
-        <p>With our various content of Ideas, Styles and Community.</p>
+        <p>With my various content of Ideas, Styles and Projects.</p>
       </div>
       <div class="row my-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
@@ -139,9 +140,9 @@
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
-            <p>Get paid from your ideas</p>
-            <h2>Sell your content at your fingertips</h2>
-            <button class="btn btn-primary mt-3">Learn more</button>
+            <p>Let's be friend, get to know me.</p>
+            <h2>Connect with me at your fingertips</h2>
+            <button class="btn btn-primary mt-3">Connect me</button>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
             <img

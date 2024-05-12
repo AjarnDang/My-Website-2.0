@@ -34,8 +34,42 @@ h1, h2, h3, h4, h5, h6, label, thead {
   font-weight: bold;
 }
 
+i.fa-solid:hover {
+  color: var(--primary) !important;
+}
+
+/* Navbar customization */
+.navbar .nav-item .nav-link {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+/* Carousel */
+.carousel-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  padding: 0px 3px;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+/* Bootstrap */
 .text-white {
   color: var(--white) !important;
+}
+
+.text-secondary {
+  color: var(--gray) !important;
 }
 
 .text-primary {
@@ -43,7 +77,7 @@ h1, h2, h3, h4, h5, h6, label, thead {
 }
 
 .bg-text {
-  background-color: var(--text);
+  background-color: var(--text) !important;
 }
 
 .bg-dark,
@@ -83,36 +117,10 @@ h1, h2, h3, h4, h5, h6, label, thead {
   background-color: var(--secondary);
 }
 
-i.fa-solid:hover {
-  color: var(--primary) !important;
+.border-top {
+  border-color: var(--secondary) !important;
 }
 
-/* Navbar customization */
-.navbar .nav-item .nav-link {
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-}
-
-/* Carousel */
-.carousel-image {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-  padding: 0px 3px;
-}
-
-@keyframes scroll-horizontal {
-  0% {
-    left: 100%;
-  }
-
-  100% {
-    left: -100%;
-  }
-}
-
-/* Bootstrap */
 .accordion-item {
   border: 0;
 }
@@ -179,6 +187,15 @@ footer a.nav-link i:hover {
 .image-gallerry .item:nth-of-type(10) {
   grid-column: 3 / span 2;
   grid-row: 3 / span 2;
+}
+
+/* Vuetify customize */
+.theme--light.v-chip:not(.v-chip--active) {
+  background-color: var(--primary) !important;
+}
+
+.theme--light.v-divider {
+  border-color: var(--light-gray) !important;
 }
 
 /* ENDLESS ROTATE */
