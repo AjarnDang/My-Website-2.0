@@ -2,17 +2,19 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <h1>
-            Hello, my name is
-            <h1 class="text-primary d-inline">Thornthan</h1>
-          </h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it.
-          </p>
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-start">
+          <div class="mt-10">
+            <h1>
+              Hello, my name is
+              <h1 class="text-primary d-inline">Thornthan</h1>
+            </h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it.
+            </p>
+          
           <div class="my-4">
             <button class="btn btn-primary px-5 py-3">Explore more</button>
             <button
@@ -22,6 +24,7 @@
               Features Product
             </button>
           </div>
+        </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <img
@@ -39,13 +42,25 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504" class="d-block w-100 carousel-image" alt="..." />
+            <img
+              src="../assets/img/pj-cu.png"
+              class="d-block w-100 carousel-image"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504" class="d-block w-100 carousel-image" alt="..." />
+            <img
+              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504"
+              class="d-block w-100 carousel-image"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504" class="d-block w-100 carousel-image" alt="..." />
+            <img
+              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt91603120633fede7/662fd91e58ce889b32c32e2b/8-3-Kickoff-Thumbnail-16x9-Textless-V1.jpg?auto=webp&disable=upscale&height=504"
+              class="d-block w-100 carousel-image"
+              alt="..."
+            />
           </div>
         </div>
         <button
