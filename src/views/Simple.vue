@@ -4,7 +4,9 @@
     <h2 v-if="show">{{ name }}</h2>
     <v-btn color="success" class="mr-3" @click="show = !show">switch</v-btn>
     <v-btn color="success" @click="callAlert()">alert</v-btn>
+    
     <v-row class="mt-3">
+
       <v-col cols="3" v-for="(item, index) in catlist" :key="index">
         <v-card width="350" class="bg-text">
           <v-img :src="item.img"></v-img>
@@ -16,7 +18,8 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" class="bg-white">
+
+      <!-- <v-col cols="12" class="bg-white">
         <v-text-field
           name="name"
           label="name"
@@ -25,13 +28,24 @@
           class="text-white"
         ></v-text-field>
         <v-btn color="info" @click="callAlertParam(name)">info</v-btn>
+      </v-col> -->
+
+      <v-col cols="12">
+        <SimpleComp :name="name" @callAlert="callAlert" />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import SimpleComp from '../components/SimpleComp.vue';
+import { EventBus } from '@/EventBus'
+
 export default {
+  components: {
+    SimpleComp,
+  },
+
   data() {
     return {
       name: "Thornthan Jomtharak",
@@ -49,26 +63,14 @@ export default {
     };
   },
   methods: {
+    callSim() {
+      EventBus.$emit('SimComCallAlert')
+    },
     callAlert() {
       alert("โฮ่ง");
     },
-    callAlertParam(item) {
-        if (item >= 80 && item <= 100) {
-            alert("A");
-        } else if (item >= 70 && item <=79) {
-            alert("B")
-        } else if (item >= 60 && item <=69) {
-            alert("C")
-        } else if (item >= 50 && item <=59) {
-            alert("D")
-        } else if (item >= 0 && item <= 49) {
-            alert("F")
-        } else {
-            alert("กรอกเลขตั้งแต่ 0-100 เท่านั้นจ้าพี่")
-        }
-    },
   },
-};
+}
 </script>
 
 <style></style>
