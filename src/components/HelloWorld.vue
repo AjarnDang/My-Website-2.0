@@ -29,7 +29,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
         <!-- https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png -->
           <img
-            src="../assets/img/me-1.png"
+            src="../assets/img/me-2.png"
             alt="Hero Image"
             width="100%"
           />
@@ -44,7 +44,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../assets/img/pj-4.png"
+              src="https://images6.alphacoders.com/118/1186640.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
@@ -144,10 +144,10 @@
             <h2>Connect with me at your fingertips</h2>
             <button class="btn btn-primary mt-3">Connect me</button>
           </div>
-          <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center">
             <img
-              src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt34e30d5669e7309c/653add3080274d040a37d656/ISO_KeyArt_Final.png"
-              class="w-100"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6174cd1a-f614-4c1e-9d75-4997060b6156/dg7d28y-e6ce55d6-b1b8-4f5f-8121-9625e6054339.png/v1/fill/w_1280,h_2650/chamber_render__high_res__by_lynwulf_dg7d28y-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjY1MCIsInBhdGgiOiJcL2ZcLzYxNzRjZDFhLWY2MTQtNGMxZS05ZDc1LTQ5OTcwNjBiNjE1NlwvZGc3ZDI4eS1lNmNlNTVkNi1iMWI4LTRmNWYtODEyMS05NjI1ZTYwNTQzMzkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.uU11Yx_7SXeC5eEOgLjSWg3NtlF_xxlCrcfTLEPbjU0"
+              class="w-50"
             />
           </div>
         </div>

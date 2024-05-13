@@ -1,137 +1,188 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col lg="7" md="7" sm="6" cols="12">
-        <v-card
-          :disabled="loading"
-          :loading="loading"
-          class="mx-auto my-12 bg-text"
-          max-width="100%"
-        >
-          <v-img height="300" src="../assets/img/me.jpg" cover></v-img>
+  <div>
+    <div class="img-bg"></div>
+    <v-container>
+      <div class="card-image d-flex align-items-center flex-wrap">
+        <v-img class="c-image" src="../assets/img/me.jpg" cover> </v-img>
+        <div class="ml-5 mt-5">
+          <h2 class="mb-0">Thornthan Jomtharak</h2>
+          <p>Frontend Developer, UX/UI Designer</p>
+        </div>
+      </div>
 
-          <v-card-item>
-            <v-card-title>Thornthan Jomtharak</v-card-title>
-            <v-card-text class="pb-0 text-secondary">
-              <div class="text-subtitle-1 text-secondary">
-                $ • Frontend Developer, UX/UI Designer
-              </div>
-            </v-card-text>
-            <v-card-subtitle>
-              <span class="me-1"
-                >Hi, my name is Thornthan Jomtharak. My nickname is Brand. I
-                graduated from Khon Kaen University, Information Technology
-                Major, College of Computing. Specialize in Frontend Development
-                and Design.</span
-              >
-            </v-card-subtitle>
-          </v-card-item>
-
-          <v-divider class="mx-4 mb-1"></v-divider>
-
-          <v-card-item>
+      <v-card
+        :disabled="loading"
+        :loading="loading"
+        class="mx-auto mt-16 mb-12 bg-text"
+      >
+        <v-row>
+          <v-col lg="5" md="5" sm="6" cols="12">
+            <v-card-item>
+              <!-- <v-card-title>Thornthan Jomtharak</v-card-title> -->
+              <!-- <v-card-text class="pb-0 text-secondary">
+                <div class="text-subtitle-1 text-secondary">
+                  $ • Frontend Developer, UX/UI Designer
+                </div>
+              </v-card-text> -->
+              <v-card-subtitle>
+                <span
+                  >Hi, my name is Thornthan Jomtharak. My nickname is Brand.
+                  Comes from Bangkok, Thailand. I graduated from Khon Kaen
+                  University, Information Technology Major, College of
+                  Computing. Specialize in Frontend Development and
+                  UX / UI Design and Graphic Design.</span
+                >
+                <CardSocial />
+              </v-card-subtitle>
+            </v-card-item>
+          </v-col>
+          <v-col lg="7" md="7" sm="6" cols="12">
             <v-card-text>
-                   
+              <h6 class="text-white mb-5">Experiences</h6>
               <div class="text-secondary">
                 <div class="mb-3">
-                  <h6 class="mb-0">Software Engineer</h6>
+                  <p class="mb-0">Software Engineer</p>
                   <p class="mb-0 text-secondary">
                     INET (Internet Thailand PCL)
                   </p>
                   <p class="text-secondary">May 2024 - Present</p>
                 </div>
                 <div class="mb-3">
-                  <h6 class="mb-0">UX / UI Designer</h6>
+                  <p class="mb-0">UX / UI Designer</p>
                   <p class="mb-0 text-secondary">Zenith Comp Co,. LTd.</p>
                   <p class="text-secondary">Nov 2023 - Apr 2024</p>
                 </div>
                 <div class="mb-3">
-                  <h6 class="mb-0">Developer</h6>
+                  <p class="mb-0">Developer</p>
                   <p class="mb-0 text-secondary">AXONS Corporate</p>
                   <p class="text-secondary">Jun 2023 - Oct 2023</p>
                 </div>
                 <div class="mb-3">
-                  <h6 class="mb-0">Developer (Internship)</h6>
-                  <p class="mb-0 text-secondary">Zenith Comp Co,. LTd.</p>
+                  <p class="mb-0">Developer (Internship)</p>
+                  <p class="mb-0 text-secondary">
+                    Metro Systems Corporation Public Limited Company
+                  </p>
                   <p class="text-secondary">Nov 2022 - Mar 2024</p>
                 </div>
               </div>
             </v-card-text>
-          </v-card-item>
 
-          <v-divider class="mx-4 mb-1"></v-divider>
+            <v-divider class="mx-4 mb-1 mt-0"></v-divider>
 
-          <v-card-title>Tonight's availability</v-card-title>
+            <v-card-text>
+              <h6 class="text-white mb-5">Programming Skills</h6>
+              <div class="mb-2">
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >HTML5</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2" color="secondary">CSS3</v-chip>
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >JavaScript</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2" color="secondary">PHP</v-chip>
+                <v-chip class="skills mr-2 mb-2" color="secondary">SQL</v-chip>
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >React.js</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >Node.js</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >Next.js</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2" color="secondary"
+                  >.NET MVC</v-chip
+                >
+              </div>
 
-          <div class="px-4 mb-2">
-            <v-chip-group
-              v-model="selection"
-              selected-class="bg-deep-purple-lighten-2"
-            >
-              <v-chip>5:30PM</v-chip>
+              <h6 class="text-white my-5">Tools & Utilities</h6>
+              <div class="mb-2">
+                <v-chip class="tools mr-2 mb-2" color="secondary"
+                  >Visual Studio Code</v-chip
+                >
+                <v-chip class="tools mr-2 mb-2" color="secondary">Figma</v-chip>
+                <v-chip class="tools mr-2 mb-2" color="secondary">Canva</v-chip>
+                <v-chip class="tools mr-2 mb-2" color="secondary"
+                  >Adoba Photoshop</v-chip
+                >
+                <v-chip class="tools mr-2 mb-2" color="secondary"
+                  >Adobe Premier Pro</v-chip
+                >
+                <v-chip class="tools mr-2 mb-2" color="secondary"
+                  >Adobe XD</v-chip
+                >
+                <v-chip class="tools mr-2 mb-2" color="secondary">Git</v-chip>
+                <v-chip class="tools mr-2 mb-2" color="secondary"
+                  >MongoDB</v-chip
+                >
+                <v-chip class="tools mr-2 mb-2" color="secondary">MySQL</v-chip>
+              </div>
 
-              <v-chip>7:30PM</v-chip>
-
-              <v-chip>8:00PM</v-chip>
-
-              <v-chip>9:00PM</v-chip>
-            </v-chip-group>
-          </div>
-
-          <v-card-actions>
-            <v-btn
-              color="deep-purple-lighten-2"
-              text="Reserve"
-              block
-              border
-              @click="reserve"
-            ></v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-      <v-col lg="5" md="5" sm="6" cols="12"> </v-col>
-    </v-row>
-  </v-container>
+              <h6 class="text-white my-5">Strengths</h6>
+              <div class="mb-2">
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Open Minded</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Pay attention to details</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Prioritize</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Critical-Thinking</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Communication</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Work as Team</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Flexible</v-chip
+                >
+                <v-chip class="str mr-2 mb-2" color="secondary"
+                  >Emphatize</v-chip
+                >
+              </div>
+            </v-card-text>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-container>
+  </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    reserve() {
-      this.loading = true;
+import CardSocial from "../components/CardSocial.vue";
 
-      setTimeout(() => (this.loading = false), 2000);
-    },
+export default {
+  components: {
+    CardSocial,
   },
-  data: () => ({
-      messages: [
-        {
-          from: 'Software Engineer',
-          message: `INET (Internet Thailand PCL)`,
-          time: 'May 2024 - Present',
-          color: 'deep-purple-lighten-1',
-        },
-        {
-          from: 'John Doe',
-          message: 'Yeah, sure. Does 1:00pm work?',
-          time: '10:37am',
-          color: 'green',
-        },
-        {
-          from: 'You',
-          message: 'Did you still want to grab lunch today?',
-          time: '9:47am',
-          color: 'deep-purple-lighten-1',
-        },
-        {
-          from: 'You',
-          message: 'Did you still want to grab lunch today?',
-          time: '9:47am',
-          color: 'deep-purple-lighten-1',
-        },
-      ],
-    }),
 };
 </script>
 
-<style></style>
+<style>
+.img-bg {
+  height: 320px;
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  opacity: 0.3;
+  background-image: url("https://cdn.wallpapersafari.com/86/2/bfFe9r.jpeg");
+}
+
+.card-image {
+  position: absolute;
+  top: 4.5rem;
+  z-index: 1000;
+}
+
+.c-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid #6d6767;
+}
+</style>
