@@ -22,7 +22,7 @@
             <v-row class="fill-height" align="center" justify="center">
               <v-img
                 :src="info.displayIcon"
-                class="w-100 rounded mb-5 mt-3"
+                class="w-100 rounded-lg mb-5 mt-3"
               ></v-img>
               <v-card-text class="px-0 pb-0 pt-5">
                 <h6 class="mb-0 weapon-name">{{ info.displayName }}</h6>
@@ -56,7 +56,7 @@
             <v-row class="fill-height" align="center" justify="center">
               <v-img
                 :src="info.displayIcon"
-                class="w-100 rounded mb-5 mt-3"
+                class="w-100 rounded-lg mb-5 mt-3"
               ></v-img>
               <v-card-text class="px-0 pb-0 pt-5">
                 <h6 class="mb-0 weapon-name">{{ info.displayName }}</h6>
@@ -89,7 +89,7 @@
             <v-row class="fill-height" align="center" justify="center">
               <v-img
                 :src="info.displayIcon"
-                class="w-100 rounded mb-5 mt-3"
+                class="w-100 rounded-lg mb-5 mt-3"
               ></v-img>
               <v-card-text class="px-0 pb-0 pt-5">
                 <h6 class="mb-0 weapon-name">{{ info.displayName }}</h6>
@@ -122,7 +122,7 @@
             <v-row class="fill-height" align="center" justify="center">
               <v-img
                 :src="info.displayIcon"
-                class="w-100 rounded mb-5 mt-3"
+                class="w-100 rounded-lg mb-5 mt-3"
               ></v-img>
               <v-card-text class="px-0 pb-0 pt-5">
                 <h6 class="mb-0 weapon-name">{{ info.displayName }}</h6>

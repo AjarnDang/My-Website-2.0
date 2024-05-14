@@ -2,7 +2,7 @@
   <div>
     <v-col
       cols="12"
-      class="mb-3 px-0 rounded"
+      class="mb-3 px-0 rounded-lg"
       v-for="(item, index) in project"
       :key="index"
     >
@@ -18,13 +18,13 @@
             }}</v-list-item-subtitle>
           </v-list-item-content>
 
-          <v-list-item-avatar tile size="80" class="rounded">
+          <v-list-item-avatar tile size="80" class="rounded-lg">
             <v-img :src="item.img"></v-img>
           </v-list-item-avatar>
         </v-list-item>
 
         <v-card-actions>
-          <v-btn rounded text class="text-white bg-primary ml-2 mb-2 px-4"
+          <v-btn rounded-lg text class="text-white bg-primary ml-2 mb-2 px-4"
             >SEE MORE</v-btn
           >
         </v-card-actions>

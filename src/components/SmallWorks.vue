@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" class="mb-3 rounded bg-text">
+  <v-col cols="12" class="mb-3 rounded-lg bg-text">
           <v-card
             class="mx-auto bg-text p-3 border-0"
             max-width="100%"
@@ -16,7 +16,7 @@
               class="text-white"
             ></v-text-field>
             <v-btn
-              rounded
+              rounded-lg
               class="text-white bg-primary mb-2 px-4"
               @click="callAlertParam(name)"
               >ENTER</v-btn

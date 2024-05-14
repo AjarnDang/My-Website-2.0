@@ -145,7 +145,7 @@
         </div>
         <hr />
         <div
-          class="text-secondary d-flex justify-content-center align-items-center flex-wrap my-8"
+          class="text-secondary d-flex justify-content-center align-items-center flex-wrap mt-8 mb-5"
         >
           Copyright © 2024. Thornthan Jomtharak.
         </div>

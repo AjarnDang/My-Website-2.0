@@ -145,6 +145,21 @@ a.text-primary:hover {
   border-color: var(--dark-gray) !important;
 }
 
+.card-weapon {
+  min-height:200px;
+  height: 35vh;
+}
+
+.card-weapon img {
+  max-height: 20vh;
+  object-fit: contain;
+}
+
+.card-weapon-detail {
+  display: flex;
+  align-items: end;
+}
+
 .accordion-item {
   border: 0;
 }

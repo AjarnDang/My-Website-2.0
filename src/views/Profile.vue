@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="img-bg"></div>
-    <v-container>
+    <div class="container">
       <div class="card-image d-flex align-items-center flex-wrap">
         <v-img class="c-image" src="../assets/img/me.jpg" cover> </v-img>
         <div class="ml-5 mt-5">
@@ -149,7 +149,7 @@
           </v-col>
         </v-row>
       </v-card>
-    </v-container>
+    </div>
   </div>
 </template>
 

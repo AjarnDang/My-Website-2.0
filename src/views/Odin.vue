@@ -15,7 +15,7 @@
         v-for="(info, index) in info"
         :key="index"
       >
-        <div class="card bg-transparent shadow-none bg-text p-4">
+        <div class="card bg-transparent shadow-none bg-text p-4 card-weapon">
           <img
             :src="info.displayIcon"
             class="white--text align-end mt-2 mb-5"
@@ -24,7 +24,7 @@
             width="100%"
           />
 
-          <div class="card-body p-0 text-white">
+          <div class="card-body p-0 text-white card-weapon-detail">
             <div>
               <h5 class="mb-0">{{ info.displayName }}</h5>
               <p class="mb-0 text-primary">1650 VP</p>
@@ -55,7 +55,7 @@ export default {
         .then((res) => {
           if (res.data.status == 200) {
             const filteredData = res.data.data.filter((item) =>
-              item.displayName.includes("Odin")
+              item.displayName.includes("Odin") && item.displayIcon != null
             );
             this.info = filteredData; // Limit to first 10 items
           }
@@ -69,12 +69,5 @@ export default {
 </script>
 
 <style>
-.card {
-  height: 250px;
-}
 
-.card-body {
-  display: flex;
-  align-items: end;
-}
 </style>

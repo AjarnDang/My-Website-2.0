@@ -98,9 +98,8 @@
         </button>
       </div>
 
-      <div class="d-flex justify-content-center my-16">
-        <!-- <v-sheet class="my-5 bg-transparent shadow-none">
-          <v-chip-group> -->
+        <v-sheet class="my-5 bg-transparent d-flex justify-content-center shadow-none my-16">
+          <v-chip-group>
         <a
           v-for="tag in tags"
           :key="tag"
@@ -110,9 +109,8 @@
           <v-img :src="tag.tagImage" width="200" height="auto"></v-img>
           {{ tag.tagName }}
         </a>
-        <!-- </v-chip-group>
-        </v-sheet> -->
-      </div>
+        </v-chip-group>
+        </v-sheet>
 
       <NewArrival class="mt-16" />
 
@@ -126,12 +124,12 @@
         <v-row dense class="mt-5">
           <v-col v-for="card in Weapon" :key="card.title" :cols="card.flex">
             
-              <v-card>
+              <v-card class="rounded-lg">
                 <a :href="card.tagLink" class="text-decoration-none text-white">
                 <v-img
                   :src="card.src"
-                  class="white--text align-end"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  class="white--text align-end rounded-lg"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0, 1)"
                   height="400px"
                 >
                   <v-card-title v-text="card.title"></v-card-title>
@@ -152,11 +150,11 @@
         </div>
         <v-row dense class="mt-5">
           <v-col v-for="card in Bundle" :key="card.title" :cols="card.flex">
-            <v-card>
+            <v-card class="rounded-xl">
               <v-img
                 :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                class="white--text align-end rounded-xl"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.0)"
                 height="400px"
               >
                 <!-- <v-card-title v-text="card.title"></v-card-title> -->

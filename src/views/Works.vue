@@ -3,7 +3,7 @@
     <h2 class="mb-0">Quality works</h2>
     <p class="mb-10">Since 2022 - Present</p>
 
-    <v-tabs dark class="rounded">
+    <v-tabs dark class="rounded-lg">
       <v-tab> Projects </v-tab>
       <v-tab> Small Projects </v-tab>
 

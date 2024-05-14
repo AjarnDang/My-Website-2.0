@@ -12,7 +12,6 @@
 
     <v-sheet
       class="mx-auto shadow-none mt-5"
-      elevation="8"
       color="transparent"
       dark
     >
@@ -22,7 +21,7 @@
             <v-row class="fill-height" align="center" justify="center">
               <v-img
                 :src="item.img"
-                class="w-100 rounded"
+                class="w-100 rounded-lg"
                 height="180px"
               ></v-img>
               <v-card-text class="px-0">
