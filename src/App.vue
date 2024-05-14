@@ -85,21 +85,21 @@
       <div class="container">
         <div class="d-flex pt-8 pb-10 justify-content-between flex-wrap">
           <div class="mb-3">
-            <h5>CONTENT</h5>
+            <p>CONTENT</p>
             <a href="#" class="nav-link"> Discover </a>
             <a href="#" class="nav-link"> Poppular Content </a>
             <a href="#" class="nav-link"> New Trand </a>
             <a href="#" class="nav-link"> Categories </a>
           </div>
           <div class="mb-3">
-            <h5>INFOMATION</h5>
+            <p>INFOMATION</p>
             <a href="#" class="nav-link"> Pricing </a>
             <a href="#" class="nav-link"> Sell Content </a>
             <a href="#" class="nav-link"> Jobs </a>
             <a href="#" class="nav-link"> Our Guideline </a>
           </div>
           <div class="mb-3">
-            <h5>ABOUT US</h5>
+            <p>ABOUT US</p>
             <a href="#" class="nav-link"> About us </a>
             <a href="#" class="nav-link"> Privacy Policy </a>
             <a href="#" class="nav-link"> User Agreement </a>
@@ -107,7 +107,7 @@
             <a href="#" class="nav-link"> Contact us </a>
           </div>
           <div class="mb-3">
-            <h5>MEDIA & ARTICLES</h5>
+            <p>MEDIA & ARTICLES</p>
             <a href="#" class="nav-link"> News </a>
             <a href="#" class="nav-link"> Articles </a>
             <a href="#" class="nav-link"> Blogs </a>
@@ -116,7 +116,7 @@
             <a href="#" class="nav-link"> Manual </a>
           </div>
           <div class="mb-3">
-            <h5>SOCIALS</h5>
+            <p>SOCIALS</p>
             <a href="" class="nav-link d-inline">
               <i class="fa-brands fa-square-facebook fa-2xl mr-2"> </i>
             </a>
