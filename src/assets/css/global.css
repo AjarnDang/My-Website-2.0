@@ -3,12 +3,12 @@
 :root {
   --primary: #ff4655;
   --secondary: #9A9A9A;
+  --dark-gray: #3e3e3e;
   --gray: #9A9A9A;
   --light-gray: #f1f4f7;
   --white: #eeeeee;
   --dark: #181A20;
   --text: #212121;
-
 }
 
 * {
@@ -63,8 +63,10 @@ i.fa-solid:hover {
   padding: 0px 3px;
 }
 
-.carousel-caption {
-  text-align: left;
+.carousel-caption h2 {
+  /* text-align: left; */
+  color: var(--primary);
+  text-shadow: 5px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -83,12 +85,19 @@ i.fa-solid:hover {
   color: var(--white) !important;
 }
 
+a.text-white:hover {
+  color: var(--primary) !important;
+}
+
 .text-secondary {
   color: var(--gray) !important;
 }
 
 .text-primary {
   color: var(--primary) !important;
+}
+a.text-primary:hover {
+  color: var(--white) !important;
 }
 
 .bg-text {
@@ -133,7 +142,7 @@ i.fa-solid:hover {
 }
 
 .border-top {
-  border-color: var(--secondary) !important;
+  border-color: var(--dark-gray) !important;
 }
 
 .accordion-item {

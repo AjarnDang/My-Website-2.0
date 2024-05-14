@@ -58,6 +58,31 @@ const routes = [
     component: () => import('../views/Shop.vue')
   },
   {
+    path: '/allproduct',
+    name: 'allproduct',
+    component: () => import('../views/AllProduct.vue')
+  },
+  {
+    path: '/odin',
+    name: 'odin',
+    component: () => import('../views/Odin.vue')
+  },
+  {
+    path: '/vandal',
+    name: 'vandal',
+    component: () => import('../views/Vandal.vue')
+  },
+  {
+    path: '/phantom',
+    name: 'phantom',
+    component: () => import('../views/Phantom.vue')
+  },
+  {
+    path: '/operator',
+    name: 'operator',
+    component: () => import('../views/Operator.vue')
+  },
+  {
     path: '/simple',
     name: 'simple',
     component: () => import('../views/Simple.vue')
