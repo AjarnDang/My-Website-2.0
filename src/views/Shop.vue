@@ -151,7 +151,7 @@
       <NewArrival class="mt-16" />
 
       <div class="my-16">
-        <div class="d-flex justify-content-between align-center">
+        <div class="d-flex justify-content-between align-center flex-wrap">
           <h2 class="mb-0">Get you favorite skins</h2>
           <a href="/allproduct" class="text-decoration-none text-white">
             View all <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -176,7 +176,7 @@
       </div>
 
       <div class="my-16">
-        <div class="d-flex justify-content-between align-center">
+        <div class="d-flex justify-content-between align-center flex-wrap">
           <h2 class="mb-0">Premium Bundles</h2>
           <a href="/bundle" class="text-decoration-none text-white">
             View all <i class="fa-solid fa-arrow-right ml-1"></i>

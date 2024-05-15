@@ -1,5 +1,11 @@
 <template>
   <v-container class="my-16">
+    <div class="d-flex justify-content-end align-center flex-wrap mb-5">
+      <a href="/Shop" class="text-decoration-none text-white">
+        <i class="fa-solid fa-arrow-left mr-1"></i> Back to Shop
+      </a>
+    </div>
+
     <div
       id="carouselExampleAutoplaying"
       class="carousel slide"
@@ -12,15 +18,22 @@
           v-for="(item, index) in filteredBundles"
           :key="index"
         >
-          <img
-            :src="item.displayIcon"
-            class="d-block w-100 carousel-image-2"
-            alt="img-features"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>{{ item.displayName }}</h2>
-            <p>Exclusive {{ item.description }} Bundle</p>
-          </div>
+          <router-link class="links"
+            :to="{
+              name: 'BundleDetail',
+              params: { displayName: item.displayName },
+            }"
+          >
+            <img
+              :src="item.displayIcon"
+              class="d-block w-100 carousel-image-2"
+              alt="img-features"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>{{ item.displayName }}</h2>
+              <p>Exclusive {{ item.description }} Bundle</p>
+            </div>
+          </router-link>
         </div>
       </div>
       <button
@@ -56,25 +69,32 @@
     >
       <v-slide-group v-model="model" active-class="success" show-arrows>
         <v-slide-item v-for="(item, index) in vctBundles" :key="index">
-          <v-card
-            :color="dark"
-            class="pa-1 ma-3 bottom-gradient"
-            height="auto"
-            width="250"
+          <router-link class="links"
+            :to="{
+              name: 'BundleDetail',
+              params: { displayName: item.displayName },
+            }"
           >
-            <v-row class="fill-height" align="center" justify="center">
-              <v-img
-                :src="item.displayIcon"
-                class="w-100 rounded-lg mt-3"
-                height="150"
-              ></v-img>
-              <v-card-text class="px-0 pb-0 text-center">
-                <p class="mb-0 weapon-name text-secondary">
-                  {{ item.displayName }}
-                </p>
-              </v-card-text>
-            </v-row>
-          </v-card>
+            <v-card
+              :color="dark"
+              class="pa-1 ma-3 bottom-gradient"
+              height="auto"
+              width="250"
+            >
+              <v-row class="fill-height" align="center" justify="center">
+                <v-img
+                  :src="item.displayIcon"
+                  class="w-100 rounded-lg mt-3"
+                  height="150"
+                ></v-img>
+                <v-card-text class="px-0 pb-0 text-center">
+                  <p class="mb-0 weapon-name text-secondary">
+                    {{ item.displayName }}
+                  </p>
+                </v-card-text>
+              </v-row>
+            </v-card>
+          </router-link>
         </v-slide-item>
       </v-slide-group>
     </v-sheet>
@@ -88,7 +108,12 @@
         v-for="(item, index) in allBundles"
         :key="index"
       >
-        <router-link :to="{ name: 'BundleDetail', params: { uuid: item.uuid } }">
+        <router-link class="links"
+          :to="{
+            name: 'BundleDetail',
+            params: { displayName: item.displayName },
+          }"
+        >
           <v-img
             :src="item.displayIcon"
             class="rounded-lg w-100"
@@ -108,18 +133,24 @@ export default {
   name: "AllProduct",
   data() {
     return {
-      info: [], // Initialize as an empty array
+      bundles: [],
+      skins: [],
     };
   },
   mounted() {
-    this.getBundle();
+    this.fetchData();
   },
   methods: {
-    async getBundle() {
+    async fetchData() {
       try {
-        const res = await axios.get("https://valorant-api.com/v1/bundles");
-        if (res.data.status === 200) {
-          this.info = res.data.data; // Store all data
+        const [bundleRes, skinRes] = await Promise.all([
+          axios.get("https://valorant-api.com/v1/bundles"),
+          axios.get("https://valorant-api.com/v1/weapons/skins"),
+        ]);
+
+        if (bundleRes.data.status === 200 && skinRes.data.status === 200) {
+          this.bundles = bundleRes.data.data;
+          this.skins = skinRes.data.data;
         }
       } catch (e) {
         console.log(e);
@@ -128,7 +159,7 @@ export default {
   },
   computed: {
     filteredBundles() {
-      return this.info.filter(
+      return this.bundles.filter(
         (item) =>
           item.displayName.includes("Arcane") ||
           item.displayName.includes("Champions") ||
@@ -136,17 +167,26 @@ export default {
       );
     },
     vctBundles() {
-      return this.info.filter((item) => item.displayName.includes("VCT"));
+      return this.bundles.filter((item) => item.displayName.includes("VCT"));
+    },
+    matchingBundles() {
+      const skinDisplayNames = new Set(
+        this.skins.map((skin) => skin.displayName)
+      );
+      return this.bundles.filter((bundle) =>
+        skinDisplayNames.has(bundle.displayName)
+      );
     },
     allBundles() {
-      // Exclude items that are in filteredBundles or vctBundles
-      const filteredDisplayNames = new Set([
+      // Exclude items that are in filteredBundles, vctBundles, or matchingBundles
+      const excludedDisplayNames = new Set([
         ...this.filteredBundles.map((item) => item.displayName),
         ...this.vctBundles.map((item) => item.displayName),
+        ...this.matchingBundles.map((item) => item.displayName),
       ]);
 
-      return this.info.filter(
-        (item) => !filteredDisplayNames.has(item.displayName)
+      return this.bundles.filter(
+        (item) => !excludedDisplayNames.has(item.displayName)
       );
     },
   },

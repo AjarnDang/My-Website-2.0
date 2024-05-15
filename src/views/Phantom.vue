@@ -1,6 +1,6 @@
 <template>
   <v-container class="my-16">
-    <div class="d-flex justify-content-between align-center">
+    <div class="d-flex justify-content-between align-center flex-wrap">
       <h2 class="mb-0">Phantom</h2>
       <a href="/Shop" class="text-decoration-none text-white">
         <i class="fa-solid fa-arrow-left mr-1"></i> Back to Shop

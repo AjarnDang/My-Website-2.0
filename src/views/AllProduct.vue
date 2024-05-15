@@ -2,7 +2,7 @@
   <v-container class="my-16">
     <h2>All you need.</h2>
     <div
-      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap mt-5 mb-3"
+      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap flex-wrap mt-5 mb-3"
     >
       <h5 class="text-primary mb-0">Vandal</h5>
       <a href="#" class="text-decoration-none text-white">
@@ -36,7 +36,7 @@
 
 
     <div
-      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap mt-16 mb-3"
+      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap flex-wrap mt-16 mb-3"
     >
       <h5 class="text-primary mb-0">Odin</h5>
       <a href="#" class="text-decoration-none text-white">
@@ -69,7 +69,7 @@
     </v-sheet>
 
     <div
-      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap mt-16 mb-3"
+      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap flex-wrap mt-16 mb-3"
     >
       <h5 class="text-primary mb-0">Phantom</h5>
       <a href="#" class="text-decoration-none text-white">
@@ -102,7 +102,7 @@
     </v-sheet>
 
     <div
-      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap mt-16 mb-3"
+      class="border-top pt-5 d-flex justify-content-between align-center flex-wrap flex-wrap mt-16 mb-3"
     >
       <h5 class="text-primary mb-0">Operator</h5>
       <a href="#" class="text-decoration-none text-white">

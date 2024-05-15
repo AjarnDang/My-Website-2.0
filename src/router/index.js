@@ -88,8 +88,8 @@ const routes = [
     component: () => import('../views/Bundle.vue')
   },
   {
-    path: '/bundleDetail',
-    name: 'bundleDetail',
+    path: '/bundleDetail/:displayName',
+    name: 'BundleDetail',
     component: () => import('../views/BundleDetail.vue')
   },
   {

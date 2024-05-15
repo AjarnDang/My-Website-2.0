@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="/"
           ><img src="./assets/img/logo.png" width="50px" alt=""
         /></a>
-        <v-btn
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -15,7 +15,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </v-btn>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
