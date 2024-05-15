@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="container mt-16">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-start">
+      <div class="row my-16">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-center">
           <div class="mt-10">
             <h1>
               Hello, my name is
-              <h1 class="text-primary d-inline">Thornthan</h1>
+              <h1 class="text-primary">Thornthan</h1>
             </h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -28,12 +28,12 @@
           </div>
         </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
         <!-- https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png -->
           <img
             src="../assets/img/me-2.png"
             alt="Hero Image"
-            width="100%"
+            width="90%"
           />
         </div>
       </div>
