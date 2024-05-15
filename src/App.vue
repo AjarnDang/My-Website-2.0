@@ -19,11 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-              <!-- active -->
+              <RouterLink to="/" class="nav-link">Home</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Works">Works</a>
+              <RouterLink to="/Works" class="nav-link">Works</RouterLink>
             </li>
             <!-- <li class="nav-item dropdown">
               <a
@@ -45,10 +44,10 @@
               </ul>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="/shop">Shop</a>
+              <RouterLink to="/profile" class="nav-link">About me</RouterLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profile">Profile</a>
+              <RouterLink to="/shop" class="nav-link">Valorant Store</RouterLink>
             </li>
           </ul>
           <div class="d-flex">
@@ -58,19 +57,11 @@
                   class="nav-link btn btn-outline-primary"
                   aria-current="page"
                   href="#"
-                  >Sign in</a
+                  >Contact me</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link btn btn-primary ml-2" href="#">Register</a>
-              </li>
-              <li class="nav-item">
-                <span class="nav-link ml-3">|</span>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-user fa-lg"></i
-                ></a>
+                <a class="nav-link btn btn-primary ml-2" href="#">Support me</a>
               </li>
             </ul>
           </div>
@@ -151,7 +142,6 @@
         </div>
       </div>
     </footer>
-
   </v-app>
 </template>
 
@@ -166,3 +156,13 @@ export default {
   }),
 };
 </script>
+
+<style>
+nav li:hover,
+nav li.router-link-active,
+nav li.router-link-exact-active {
+  background-color: #3e3e3e;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+</style>

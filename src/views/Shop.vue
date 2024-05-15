@@ -98,26 +98,8 @@
         </button>
       </div>
 
-      <!-- <v-sheet
-        class="my-5 bg-transparent d-flex justify-content-center shadow-none my-16"
-        color="transparent"
-        dark
-      >
-        <v-chip-group dark>
-          <a
-            v-for="tag in tags"
-            :key="tag"
-            :href="tag.tagLink"
-            class="weapons text-center mx-2 px-3"
-          >
-            <v-img :src="tag.tagImage" width="200" height="auto"></v-img>
-            {{ tag.tagName }}
-          </a>
-        </v-chip-group>
-      </v-sheet> -->
-
       <v-sheet
-        class="mx-auto shadow-none mt-5"
+        class="mx-auto shadow-none d-flex justify-content-center mt-5"
         elevation="8"
         color="transparent"
         dark
@@ -185,6 +167,7 @@
         <v-row dense class="mt-5">
           <v-col v-for="card in Bundle" :key="card.title" :cols="card.flex">
             <v-hover v-slot="{ hover }">
+              <a :href="card.tagLink" class="text-decoration-none text-white">
               <v-card class="rounded-xl">
                 <v-img
                   :src="card.src"
@@ -203,6 +186,7 @@
                   </v-expand-transition>
                 </v-img>
               </v-card>
+            </a>
             </v-hover>
           </v-col>
         </v-row>
@@ -271,19 +255,19 @@ export default {
       Bundle: [
         {
           title: "Champion 2023 Bundle",
-          tagLink: "/vandal",
+          tagLink: "/bundle",
           src: "https://news.codashop.com/ph/wp-content/uploads/sites/5/2023/08/Champions-2023-Bundle.jpg",
           flex: 12,
         },
         {
           title: "Reaver Bundle",
-          tagLink: "/vandal",
+          tagLink: "/bundle",
           src: "https://staticg.sportskeeda.com/editor/2022/08/59f9b-16593284270850-1920.jpg",
           flex: 6,
         },
         {
           title: "Araxys Bundle",
-          tagLink: "/vandal",
+          tagLink: "/bundle",
           src: "https://cdn.vcgamers.com/news/wp-content/uploads/2023/01/Bundle-Baru-Valorant.png",
           flex: 6,
         },
