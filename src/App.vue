@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="/"
           ><img src="./assets/img/logo.png" width="50px" alt=""
         /></a>
-        <button
+        <v-btn
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -15,7 +15,7 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </v-btn>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -140,7 +140,7 @@
             <p class="mt-5 mb-3">
               Get exclusive assets sent straight to your inbox
             </p>
-            <button class="btn btn-primary px-5">Sign up</button>
+            <v-btn class="btn btn-primary px-5">Sign up</v-btn>
           </div>
         </div>
         <hr />

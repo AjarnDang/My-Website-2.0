@@ -58,7 +58,7 @@
             <p class="mt-5 mb-3">
               Get exclusive assets sent straight to your inbox
             </p>
-            <button class="btn btn-primary px-5">Sign up</button>
+            <v-btn class="btn btn-primary px-5">Sign up</v-btn>
           </div>
         </div>
         <hr />
@@ -66,10 +66,10 @@
           class="copy-right d-flex justify-content-between align-items-center flex-wrap my-4"
         >
           Copyright
-          <button class="btn-btn-primary">
+          <v-btn class="btn-btn-primary">
             <a href="#/action-1">English</a>
             <a href="#/action-1">English</a>
-          </button>
+          </v-btn>
         </div>
       </div>
     </footer>

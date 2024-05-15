@@ -83,6 +83,16 @@ const routes = [
     component: () => import('../views/Operator.vue')
   },
   {
+    path: '/bundle',
+    name: 'bundle',
+    component: () => import('../views/Bundle.vue')
+  },
+  {
+    path: '/bundleDetail',
+    name: 'bundleDetail',
+    component: () => import('../views/BundleDetail.vue')
+  },
+  {
     path: '/simple',
     name: 'simple',
     component: () => import('../views/Simple.vue')

@@ -16,13 +16,15 @@
             </p>
           
           <div class="my-10">
-            <button class="btn btn-primary px-5 py-3">Explore more</button>
-            <button
-              class="btn btn-transparent text-white d-inline-flex align-items-center py-3 mx-2"
+            <v-btn class="btn btn-primary px-5 py-3" href="/profile">Explore more</v-btn>
+            <v-btn
+            color="transparent"
+              class="text-white shadow-none d-inline-flex align-items-center py-3 mx-2"
+              href="/works"
             >
               <i class="fa-solid fa-star fa-lg mx-2"></i>
               Featured Projects
-            </button>
+            </v-btn>
           </div>
         </div>
         </div>
@@ -142,7 +144,7 @@
           <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
             <p>Let's be friend, get to know me.</p>
             <h2>Connect with me at your fingertips</h2>
-            <button class="btn btn-primary mt-3">Connect me</button>
+            <v-btn class="btn btn-primary mt-3">Connect me</v-btn>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center">
             <img

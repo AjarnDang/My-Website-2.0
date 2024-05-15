@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="my-16">
+    <v-container class="mt-16">
       <div
         id="carouselExampleAutoplaying"
         class="carousel slide"
@@ -98,19 +98,55 @@
         </button>
       </div>
 
-        <v-sheet class="my-5 bg-transparent d-flex justify-content-center shadow-none my-16">
-          <v-chip-group>
-        <a
-          v-for="tag in tags"
-          :key="tag"
-          :href="tag.tagLink"
-          class="weapons text-center mx-2 px-5"
-        >
-          <v-img :src="tag.tagImage" width="200" height="auto"></v-img>
-          {{ tag.tagName }}
-        </a>
+      <!-- <v-sheet
+        class="my-5 bg-transparent d-flex justify-content-center shadow-none my-16"
+        color="transparent"
+        dark
+      >
+        <v-chip-group dark>
+          <a
+            v-for="tag in tags"
+            :key="tag"
+            :href="tag.tagLink"
+            class="weapons text-center mx-2 px-3"
+          >
+            <v-img :src="tag.tagImage" width="200" height="auto"></v-img>
+            {{ tag.tagName }}
+          </a>
         </v-chip-group>
-        </v-sheet>
+      </v-sheet> -->
+
+      <v-sheet
+        class="mx-auto shadow-none mt-5"
+        elevation="8"
+        color="transparent"
+        dark
+      >
+        <v-slide-group v-model="model" active-class="success" show-arrows>
+          <v-slide-item v-for="tag in tags" :key="tag">
+            <a :href="tag.tagLink" class="weapons text-white text-decoration-none mx-2">
+            <v-card
+              :color="dark"
+              class="pa-2 ma-3 bottom-gradient"
+              height="auto"
+              width="250"
+            >
+              <v-row class="fill-height" align="center" justify="center">
+                <v-img
+                  :src="tag.tagImage"
+                  class="w-100 rounded-lg mt-3"
+                ></v-img>
+                <v-card-text class="px-0 pb-0 text-center">
+                  <p class="mb-0 weapon-name">
+                    {{ tag.tagName }}
+                  </p>
+                </v-card-text>
+              </v-row>
+            </v-card>
+          </a>
+          </v-slide-item>
+        </v-slide-group>
+      </v-sheet>
 
       <NewArrival class="mt-16" />
 
@@ -123,9 +159,8 @@
         </div>
         <v-row dense class="mt-5">
           <v-col v-for="card in Weapon" :key="card.title" :cols="card.flex">
-            
-              <v-card class="rounded-lg">
-                <a :href="card.tagLink" class="text-decoration-none text-white">
+            <v-card class="rounded-lg">
+              <a :href="card.tagLink" class="text-decoration-none text-white">
                 <v-img
                   :src="card.src"
                   class="white--text align-end rounded-lg"
@@ -135,8 +170,7 @@
                   <v-card-title v-text="card.title"></v-card-title>
                 </v-img>
               </a>
-              </v-card>
-            
+            </v-card>
           </v-col>
         </v-row>
       </div>
@@ -144,26 +178,63 @@
       <div class="my-16">
         <div class="d-flex justify-content-between align-center">
           <h2 class="mb-0">Premium Bundles</h2>
-          <a href="/allproduct" class="text-decoration-none text-white">
+          <a href="/bundle" class="text-decoration-none text-white">
             View all <i class="fa-solid fa-arrow-right ml-1"></i>
           </a>
         </div>
         <v-row dense class="mt-5">
           <v-col v-for="card in Bundle" :key="card.title" :cols="card.flex">
-            <v-card class="rounded-xl">
-              <v-img
-                :src="card.src"
-                class="white--text align-end rounded-xl"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.0)"
-                height="400px"
-              >
-                <!-- <v-card-title v-text="card.title"></v-card-title> -->
-              </v-img>
-            </v-card>
+            <v-hover v-slot="{ hover }">
+              <v-card class="rounded-xl">
+                <v-img
+                  :src="card.src"
+                  class="white--text align-end rounded-xl"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.0)"
+                  height="400px"
+                >
+                  <v-expand-transition>
+                    <div
+                      v-if="hover"
+                      class="d-flex fade-transition darken-2 v-card--reveal text-h3 white--text"
+                      style="height: 100%"
+                    >
+                      {{ card.title }}
+                    </div>
+                  </v-expand-transition>
+                </v-img>
+              </v-card>
+            </v-hover>
           </v-col>
         </v-row>
       </div>
     </v-container>
+
+    <div class="py-10 bg-text">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
+            <p>Receive our exclusive news and discount.</p>
+            <h2>Let's connect you to our best skins store.</h2>
+            <v-form class="mt-10">
+              <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                label="E-mail"
+                dark
+                required
+              ></v-text-field>
+              <v-btn class="btn btn-primary">Subscribe</v-btn>
+            </v-form>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center">
+            <img
+              src="https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png"
+              class="w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -199,19 +270,19 @@ export default {
       ],
       Bundle: [
         {
-          title: "Vandal",
+          title: "Champion 2023 Bundle",
           tagLink: "/vandal",
           src: "https://news.codashop.com/ph/wp-content/uploads/sites/5/2023/08/Champions-2023-Bundle.jpg",
           flex: 12,
         },
         {
-          title: "Phantom",
+          title: "Reaver Bundle",
           tagLink: "/vandal",
           src: "https://staticg.sportskeeda.com/editor/2022/08/59f9b-16593284270850-1920.jpg",
           flex: 6,
         },
         {
-          title: "Operator",
+          title: "Araxys Bundle",
           tagLink: "/vandal",
           src: "https://cdn.vcgamers.com/news/wp-content/uploads/2023/01/Bundle-Baru-Valorant.png",
           flex: 6,
@@ -242,6 +313,12 @@ export default {
           tagLink: "/operator",
           tagImage:
             "https://vgraphs.com/images/weapons/valorant-operator-profile-icon.png",
+        },
+        {
+          tagName: "Bundles",
+          tagLink: "/bundle",
+          tagImage:
+            "https://vgraphs.com/images/weapons/valorant-elderflame-vandal-profile-icon.png",
         },
       ],
     };
@@ -281,6 +358,20 @@ export default {
 
 .weapons:hover {
   background-color: #ff4655;
-  color: #212121 !important;
+  color: #212121 !important
+}
+
+.weapon-name:hover {
+  color: #212121 !important
+}
+
+.v-card--reveal {
+  background-color: #ff4655;
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
 }
 </style>
