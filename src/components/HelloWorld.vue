@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="container">
-      <div class="row my-16">
+      <div class="row mt-10 mb-16">
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-center">
-          <div class="mt-10">
+          <div>
             <h1>
               Hello, my name is
               <h1 class="text-primary">Thornthan</h1>
