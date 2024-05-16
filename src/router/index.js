@@ -11,9 +11,9 @@ const routes = [
     component: () => import('../views/HomeView.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue')
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/Contact.vue')
   },
   {
     path: '/works',
@@ -82,8 +82,8 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  linkActiveClass: "active",
-  linkExactActiveClass: "exact-active",
+  // linkActiveClass: "active",
+  // linkExactActiveClass: "exact-active",
 })
 
 export default router

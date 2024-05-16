@@ -53,16 +53,14 @@
           <div class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
+                <RouterLink to="/contact"
                   class="nav-link btn btn-outline-primary"
-                  aria-current="page"
-                  href="#"
-                  >Contact me</a
+                  >Contact me</RouterLink
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-primary ml-2" href="#">Support me</a>
-              </li>
+              <!-- <li class="nav-item">
+                <RouterLink to="/support" class="nav-link btn btn-primary ml-lg-2 ml-md-2 mt-md-0 mt-2">Support me</RouterLink>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -164,5 +162,9 @@ nav li.router-link-exact-active {
   background-color: #3e3e3e;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.v-application ul, .v-application ol {
+  padding-left: 0;
 }
 </style>

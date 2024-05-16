@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container mt-16">
+    <div class="container">
       <div class="row my-16">
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-center">
           <div class="mt-10">
@@ -103,8 +103,7 @@
           ></i>
           <h3>Best Quality</h3>
           <p>
-            Download scroll-stopping images of the highest quality to make
-            professional designs.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium cum temporibus libero adipisci ullam,
           </p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
@@ -113,8 +112,7 @@
           ></i>
           <h3>Ready to use</h3>
           <p>
-            From thousands of ready-to-publish images to our online editor, we
-            work to get your project ready double-quick.
+            Architecto rerum esse eos sed? Sint facere ducimus dolorum minima voluptates 
           </p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
@@ -123,16 +121,14 @@
           ></i>
           <h3>Fresh content</h3>
           <p>
-            Our library is updated on a daily basis so you can find the newest
-            and trendiest photos and designs.
+            Dolor sit amet consectetur adipisicing elit. Qui hic ea a impedit quod laudantium quaerat reiciendis corrupti, numquam cupiditate inventore
           </p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
           <i class="fa-regular fa-compass fa-2xl mb-4 rotate text-primary"></i>
           <h3>Discover best practice</h3>
           <p>
-            Guaranteed search results: there’s an image and style for every
-            project you might think of.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam necessitatibus,
           </p>
         </div>
       </div>
@@ -144,7 +140,7 @@
           <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
             <p>Let's be friend, get to know me.</p>
             <h2>Connect with me at your fingertips</h2>
-            <v-btn class="btn btn-primary mt-3">Connect me</v-btn>
+            <v-btn href="/contact" class="btn btn-primary mt-3">Connect me</v-btn>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center">
             <img

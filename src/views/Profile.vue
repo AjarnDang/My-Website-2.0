@@ -2,9 +2,9 @@
   <div>
     <div class="img-bg"></div>
     <div class="container">
-      <div class="card-image d-flex align-items-center flex-wrap">
+      <div class="card-image d-lg-flex justify-content-md-center align-items-center">
         <v-img class="c-image" src="../assets/img/me.jpg" cover> </v-img>
-        <div class="ml-5 mt-5">
+        <div class="ml-5 mt-5 d-lg-inline  d-md-inline d-sm-none d-none">
           <h2 class="mb-0">Thornthan Jomtharak</h2>
           <p>Frontend Developer, UX/UI Designer</p>
         </div>
@@ -18,12 +18,6 @@
         <v-row>
           <v-col lg="5" md="5" sm="6" cols="12">
             <v-card-item>
-              <!-- <v-card-title>Thornthan Jomtharak</v-card-title> -->
-              <!-- <v-card-text class="pb-0 text-secondary">
-                <div class="text-subtitle-1 text-secondary">
-                  $ • Frontend Developer, UX/UI Designer
-                </div>
-              </v-card-text> -->
               <v-card-subtitle>
                 <span
                   >Hi, my name is Thornthan Jomtharak. My nickname is Brand.
@@ -72,76 +66,79 @@
             <v-card-text>
               <h6 class="text-white mb-5">Programming Skills</h6>
               <div class="mb-2">
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >HTML5</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2" color="secondary">CSS3</v-chip>
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">CSS3</v-chip>
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >JavaScript</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2" color="secondary">PHP</v-chip>
-                <v-chip class="skills mr-2 mb-2" color="secondary">SQL</v-chip>
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">PHP</v-chip>
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">SQL</v-chip>
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >React.js</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >Node.js</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >Next.js</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2" color="secondary"
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
                   >.NET MVC</v-chip
+                >
+                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
+                  >Vue.js</v-chip
                 >
               </div>
 
               <h6 class="text-white my-5">Tools & Utilities</h6>
               <div class="mb-2">
-                <v-chip class="tools mr-2 mb-2" color="secondary"
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
                   >Visual Studio Code</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2" color="secondary">Figma</v-chip>
-                <v-chip class="tools mr-2 mb-2" color="secondary">Canva</v-chip>
-                <v-chip class="tools mr-2 mb-2" color="secondary"
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Figma</v-chip>
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Canva</v-chip>
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
                   >Adoba Photoshop</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2" color="secondary"
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
                   >Adobe Premier Pro</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2" color="secondary"
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
                   >Adobe XD</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2" color="secondary">Git</v-chip>
-                <v-chip class="tools mr-2 mb-2" color="secondary"
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Git</v-chip>
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
                   >MongoDB</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2" color="secondary">MySQL</v-chip>
+                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">MySQL</v-chip>
               </div>
 
               <h6 class="text-white my-5">Strengths</h6>
               <div class="mb-2">
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Open Minded</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Pay attention to details</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Prioritize</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Critical-Thinking</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Communication</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Work as Team</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Flexible</v-chip
                 >
-                <v-chip class="str mr-2 mb-2" color="secondary"
+                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
                   >Emphatize</v-chip
                 >
               </div>
@@ -184,5 +181,8 @@ export default {
   width: 300px;
   border-radius: 50%;
   border: 2px solid #6d6767;
+}
+.v-chip .v-chip__content {
+  color: #eeeeee;
 }
 </style>
