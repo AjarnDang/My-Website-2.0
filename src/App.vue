@@ -47,7 +47,7 @@
               <RouterLink to="/profile" class="nav-link">About me</RouterLink>
             </li>
             <li class="nav-item">
-              <a href="https://viki-iota.vercel.app/" class="nav-link">Valorant Store <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
+              <a href="https://viki-iota.vercel.app/" target="_blank" class="nav-link">Valorant Store <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
             </li>
           </ul>
           <div class="d-flex">
