@@ -1,31 +1,31 @@
 <template>
   <v-container class="my-16">
-    <h2 class="mb-0">Quality works</h2>
-    <p class="mb-10">Since 2022 - Present</p>
+    <h2 class="mb-0">Selected works</h2>
+    <p class="mb-10 text-secondary">Since 2022 - Present</p>
 
     <v-tabs dark class="rounded-lg">
       <v-tab> Projects </v-tab>
-      <v-tab> Small Projects </v-tab>
+      <v-tab> Design </v-tab>
 
       <v-tab-item class="mt-3">
-        <Works />
+        <CodingWorks />
       </v-tab-item>
 
       <v-tab-item class="mt-6">
-        <SmallWorks />
+        <DesignWorks />
       </v-tab-item>
     </v-tabs>
   </v-container>
 </template>
 
 <script>
-import SmallWorks from '../components/SmallWorks.vue';
-import Works from "../components/Works.vue";
+import CodingWorks from "../components/CodingWorks.vue";
+import DesignWorks from "../components/DesignWorks.vue"
 
 export default {
   components: {
-    Works,
-    SmallWorks,
+    CodingWorks,
+    DesignWorks
   },
 }
 
