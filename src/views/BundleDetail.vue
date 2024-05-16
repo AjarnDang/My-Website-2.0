@@ -1,10 +1,12 @@
 <template>
   <v-container class="my-16">
-    <div class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
       <h2>{{ cleanedDisplayName }}</h2>
+      <div>
       <a href="/bundle" class="text-decoration-none text-white">
         <i class="fa-solid fa-arrow-left mr-1"></i> Back to Shop
       </a>
+    </div>
     </div>
     <img
       :src="detail.displayIcon"
