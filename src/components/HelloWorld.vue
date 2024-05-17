@@ -46,21 +46,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://images6.alphacoders.com/118/1186640.png"
+              src="../assets/img/chamber.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../assets/img/pj-2.png"
+              src="../assets/img/rank.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../assets/img/pj-3.jpg"
+              src="../assets/img/chamber-2.png"
               class="d-block w-100 carousel-image"
               alt="..."
             />
@@ -101,7 +101,7 @@
           <i
             class="fa-solid fa-certificate fa-2xl mb-4 rotate text-primary"
           ></i>
-          <h3>Best Quality</h3>
+          <h3 class="mt-4">Best Quality</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium cum temporibus libero adipisci ullam,
           </p>
@@ -110,7 +110,7 @@
           <i
             class="fa-solid fa-hourglass-half fa-2xl mb-4 rotate text-primary"
           ></i>
-          <h3>Ready to use</h3>
+          <h3 class="mt-4">Ready to use</h3>
           <p>
             Architecto rerum esse eos sed? Sint facere ducimus dolorum minima voluptates 
           </p>
@@ -119,14 +119,14 @@
           <i
             class="fa-solid fa-box-open fa-2xl start-end mb-4 text-primary"
           ></i>
-          <h3>Fresh content</h3>
+          <h3 class="mt-4">Fresh content</h3>
           <p>
             Dolor sit amet consectetur adipisicing elit. Qui hic ea a impedit quod laudantium quaerat reiciendis corrupti, numquam cupiditate inventore
           </p>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
           <i class="fa-regular fa-compass fa-2xl mb-4 rotate text-primary"></i>
-          <h3>Discover best practice</h3>
+          <h3 class="mt-4">Discover best practice</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam necessitatibus,
           </p>

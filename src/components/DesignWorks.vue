@@ -48,8 +48,17 @@
     data() {
       return {
         project: [
-          {
+        {
             no: "PROJECT #1",
+            name: "Trademan (Web Design)",
+            desc: "Trademan is a web application that trades Thai stocks through a browser developed by Effin. And a team specialized in programs and application trading systems used by Thai people for a long time, such as efin StockPickUp/ Efin Trade Plus/efin Mobile. In a highly complex world of investing in stocks, Trademan is always ready to make it easy and convenient for you to invest in the Thai stock market. Through our extensive features, make your investments more interesting and easier, and provide real-time stock prices you want. Invest with Trademan. So you don't have to trouble anymore!",
+            img: "https://play-lh.googleusercontent.com/eabf-Tcy3mMQAY0c2inZ91sjHF0EbSTzr5h-cG_vMmqbXkYWHoSXivyMURfj6juvEdum=w240-h480-rw",
+            link: "https://www.figma.com/design/VlS19VWPMGFigFN6aNyLr6/Trademan?node-id=0%3A1&t=wbP3yawOBEEA2Qaw-1",
+            created: "Mar, 2024",
+            showLink: true,
+          },
+          {
+            no: "PROJECT #2",
             name: "CU E-Reciept",
             desc: "The Sport Center of Chulalongkorn University. E-Reciept (Electronic Recipe) web application for internal uses and normal part for formal user including Registeration, Sport application, billing, etc.",
             img: "https://www.wearefreemovers.com/wp-content/uploads/2020/10/Chulalongkorn-University-Bangkok-logo.png",
@@ -58,22 +67,13 @@
             showLink: false,
           },
           {
-            no: "PROJECT #2",
+            no: "PROJECT #3",
             name: "Toyota - IDM (Identity Management)",
             desc: "A web application for setting up master data of back office systems of Toyota.",
             img: "https://yt3.googleusercontent.com/krD7oV9daygsFuSZD0jd4tSKx64cw55ZUUiZmK_9Ui3U7cSk05gvSxg0cqdErsqe-ITAXiCY=s900-c-k-c0x00ffffff-no-rj",
             link: "#",
             created: "Nov, 2023",
             showLink: false,
-          },
-          {
-            no: "PROJECT #3",
-            name: "Faculty of Science, Khon Kaen University | Alumni",
-            desc: "A college final project web application designed for alumni and students ofp Faculty of Science Khon Kaen University with the purpose of collecting data for future data analysis There are also a variety of features such as posting news, events, Hall of Fame, profile updates, and other management systems using HTML5, CSS3, PHP, MySQL and Bootstrap 5",
-            img: "https://sc.kku.ac.th/wp-content/uploads/2024/01/SCKKULO.png",
-            link: "https://github.com/AjarnDang/Alumni-SCI-KKU",
-            created: "Oct, 2021",
-            showLink: true,
           },
           {
             no: "PROJECT #4",
@@ -90,7 +90,7 @@
             desc: "Design new website page of Metro Systems Corporation Plc. Digital Solutions Group. the original website is 'https://www.metrosystems.co.th/business-units/dsg/'",
             img: "https://t3.ftcdn.net/jpg/01/29/66/24/360_F_129662425_PfXxvFN1ZcbtieCioXacM0uckB1vS4jh.jpg",
             link: "https://www.figma.com/design/bH2nDF2Su4xQn4VZGUqTGo/Metrosystems-DSG?node-id=1%3A4&t=Vn4CoOtG4WKBoLKi-1",
-            created: "Apr, 2024",
+            created: "Oct, 2023",
             showLink: true,
           },
           {
