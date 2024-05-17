@@ -102,6 +102,15 @@
             created: "Oct, 2022",
             showLink: true,
           },
+          {
+            no: "PROJECT #7",
+            name: "KGO Merchant (UI Design)",
+            desc: "A Mobile Application for local merchant to exchange KGO's token to discount and to stimulate the economy in local store",
+            img: "https://t3.ftcdn.net/jpg/01/29/66/24/360_F_129662425_PfXxvFN1ZcbtieCioXacM0uckB1vS4jh.jpg",
+            link: "https://www.figma.com/design/yiH8imTI9t9djD7n8yIyAJ/Merchant-UI---KGO-App?node-id=0%3A1&t=FUkNSsSNgKITrmx5-1",
+            created: "Mar, 2023",
+            showLink: true,
+          },
         ],
       };
     },
