@@ -111,6 +111,15 @@
             created: "Mar, 2023",
             showLink: true,
           },
+          {
+            no: "PROJECT #8",
+            name: "Zone 4 Coming soon (UI Design)",
+            desc: "Design new landing page of Zone 4 (Game) with the keyword 'Coming Soon'",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYCQGso4FSgAKr5VXwERQ_0oeAo5Vd_4ILD7pqWpuBw&s",
+            link: "https://www.figma.com/design/SCZLEnOd83U0aYmsfzmUpO/Zone4?node-id=0%3A1&t=xBvv7peXG3ogYHAk-1",
+            created: "Mar, 2023",
+            showLink: true,
+          },
         ],
       };
     },
