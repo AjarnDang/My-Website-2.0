@@ -2,9 +2,11 @@
   <div>
     <div :class="imgBgClass"></div>
     <div class="container">
-      <div class="card-image d-lg-flex justify-content-md-center align-items-center">
+      <div
+        class="card-image d-lg-flex justify-content-md-center align-items-center"
+      >
         <v-img class="c-image" src="../assets/img/me.jpg" cover> </v-img>
-        <div class="ml-5 mt-5 d-lg-inline  d-md-inline d-sm-none d-none">
+        <div class="ml-5 mt-5 d-lg-inline d-md-inline d-sm-none d-none">
           <h2 class="mb-0">Thornthan Jomtharak</h2>
           <p>Frontend Developer, UX/UI Designer</p>
         </div>
@@ -21,10 +23,28 @@
               <v-card-subtitle>
                 <span
                   >Hi, my name is Thornthan Jomtharak. My nickname is Brand.
-                  Comes from Bangkok, Thailand. I graduated from Khon Kaen
-                  University, Information Technology Major, College of
-                  Computing. Specialize in Frontend Development and
-                  UX / UI Design and Graphic Design.</span
+                  Comes from Bangkok, Thailand. I graduated from
+                  <a
+                    href="https://khonkaenuniversity.in.th/"
+                    class="text-primary"
+                    target="_blank"
+                    >Khon Kaen University</a
+                  >,
+                  <a
+                    href="https://computing.kku.ac.th/content/branch/37"
+                    class="text-primary"
+                    target="_blank"
+                  >
+                    Information Technology Major </a
+                  >,
+                  <a
+                    href="https://computing.kku.ac.th/index"
+                    class="text-primary"
+                    target="_blank"
+                  >
+                    College of Computing </a
+                  >. Specialize in Frontend Development and UX / UI Design and
+                  Graphic Design.</span
                 >
                 <CardSocial />
               </v-card-subtitle>
@@ -65,83 +85,77 @@
 
             <v-card-text>
               <h6 class="text-white mb-5">Programming Skills</h6>
-              <div class="mb-2">
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >HTML5</v-chip
+              <v-chip-group column class="mb-2">
+                <v-chip
+                  class="skills mr-2 mb-2 text-white"
+                  color="secondary"
+                  v-for="tag in skills"
+                  :key="tag"
                 >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">CSS3</v-chip>
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >JavaScript</v-chip
+                  {{ tag }}</v-chip
                 >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">PHP</v-chip>
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary">SQL</v-chip>
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >React.js</v-chip
-                >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >Node.js</v-chip
-                >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >Next.js</v-chip
-                >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >.NET MVC</v-chip
-                >
-                <v-chip class="skills mr-2 mb-2 text-white" color="secondary"
-                  >Vue.js</v-chip
-                >
-              </div>
+              </v-chip-group>
 
               <h6 class="text-white my-5">Tools & Utilities</h6>
-              <div class="mb-2">
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
-                  >Visual Studio Code</v-chip
+              <v-chip-group column class="mb-2">
+                <v-chip
+                  class="tools mr-2 mb-2 text-white"
+                  color="secondary"
+                  v-for="tag in tools"
+                  :key="tag"
                 >
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Figma</v-chip>
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Canva</v-chip>
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
-                  >Adoba Photoshop</v-chip
+                  {{ tag }}</v-chip
                 >
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
-                  >Adobe Premier Pro</v-chip
-                >
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
-                  >Adobe XD</v-chip
-                >
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">Git</v-chip>
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary"
-                  >MongoDB</v-chip
-                >
-                <v-chip class="tools mr-2 mb-2 text-white" color="secondary">MySQL</v-chip>
-              </div>
+              </v-chip-group>
 
               <h6 class="text-white my-5">Strengths</h6>
-              <div class="mb-2">
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Open Minded</v-chip
+              <v-chip-group column class="mb-2">
+                <v-chip
+                  class="tools mr-2 mb-2 text-white"
+                  color="secondary"
+                  v-for="tag in strengths"
+                  :key="tag"
                 >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Pay attention to details</v-chip
+                  {{ tag }}</v-chip
                 >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Prioritize</v-chip
-                >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Critical-Thinking</v-chip
-                >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Communication</v-chip
-                >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Work as Team</v-chip
-                >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Flexible</v-chip
-                >
-                <v-chip class="str mr-2 mb-2 text-white" color="secondary"
-                  >Emphatize</v-chip
-                >
-              </div>
+              </v-chip-group>
+            </v-card-text>
+
+            <v-divider class="mx-4 mb-1 mt-0"></v-divider>
+
+            <v-card-text>
+              <div class="d-flex flex-wrap gap-3">
+              <a
+                href="https://www.canva.com/design/DAF7pgel6sY/z15YcMNeyOScFbvzsahY2w/view"
+                class="btn btn-primary p-2 d-inline-flex align-center"
+                target="_blank"
+              >
+                <div>
+                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                  <h6 class="mt-5 text-dark text-file">Resume</h6>
+                </div>
+              </a>
+              <a
+                href="https://www.canva.com/design/DAF_eA3VojU/cHtkVH1YOjMbjPsMhOmVFQ/view"
+                class="btn btn-primary p-2 d-inline-flex align-center"
+                target="_blank"
+              >
+                <div>
+                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                  <h6 class="mt-5 text-dark text-file">Portfilio</h6>
+                </div>
+              </a>
+              <a
+                href="https://www.canva.com/design/DAGDJmYdoWM/s_DqVCQfUnYLBc1cAdqqnA/view"
+                class="btn btn-primary p-2 d-inline-flex align-center"
+                target="_blank"
+              >
+                <div>
+                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                  <h6 class="mt-5 text-dark text-file">UX/UI Presentation</h6>
+                </div>
+              </a>
+            </div>
             </v-card-text>
           </v-col>
         </v-row>
@@ -165,6 +179,40 @@ export default {
         "https://cdn.wallpapersafari.com/90/10/Y1c0Nu.png",
         "https://images8.alphacoders.com/120/1202648.jpg",
       ],
+      skills: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "SQL",
+        "React.js",
+        "Node.js",
+        "Next.js",
+        "Vue.js",
+        ".NET MVC",
+      ],
+      tools: [
+        "Visual Studio Code",
+        "Figma",
+        "Canva",
+        "Adoba Photoshop",
+        "Adobe Premier Pro",
+        "Adobe XD",
+        "Git",
+        "MongoDB",
+        "MySQL",
+        "DBeaver",
+      ],
+      strengths: [
+        "Open Minded",
+        "Pay attention to details",
+        "Prioritize",
+        "Critical-Thinking",
+        "Communication",
+        "Work as Team",
+        "Flexible",
+        "Emphatize",
+      ],
     };
   },
   computed: {
@@ -174,10 +222,10 @@ export default {
     },
     imgBgClass() {
       return {
-        'img-bg': true,
-        'random-bg': true,
+        "img-bg": true,
+        "random-bg": true,
       };
-    }
+    },
   },
   mounted() {
     this.setRandomBackgroundImage();
@@ -186,12 +234,14 @@ export default {
     setRandomBackgroundImage() {
       const randomIndex = Math.floor(Math.random() * this.images.length);
       const selectedImage = this.images[randomIndex];
-      document.querySelector('.img-bg').style.backgroundImage = `url(${selectedImage})`;
-    }
+      document.querySelector(
+        ".img-bg"
+      ).style.backgroundImage = `url(${selectedImage})`;
+    },
   },
   watch: {
-    images: 'setRandomBackgroundImage'
-  }
+    images: "setRandomBackgroundImage",
+  },
 };
 </script>
 
@@ -219,5 +269,9 @@ export default {
 }
 .v-chip .v-chip__content {
   color: #eeeeee;
+}
+
+.text-file {
+  width: 120px;
 }
 </style>

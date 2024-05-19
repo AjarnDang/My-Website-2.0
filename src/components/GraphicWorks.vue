@@ -1,69 +1,61 @@
 <template>
-  <div class="masonry-container">
-    <div class="panel" v-for="(item, index) in images" :key="index">
+  <div>
+    <div class="row">
       <div
-        class="panel-wrapper"
-        type="button"
-        :data-bs-toggle="'modal'"
-        :data-bs-target="'#modal-image' + index"
+        class="col-lg-3 col-md-4 col-sm-6 col-12"
+        v-for="(item, index) in images"
+        :key="index"
       >
-        <div class="panel-overlay">
-          <div class="panel-text">
-            <div class="panel-title">{{ item.caption }}</div>
-            <div class="panel-tags">
-              <span class="tag-icon">
-                <img
-                  class="tag-icon-img"
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg"
-                  alt=""
-                />
-              </span>
-              <span class="tags-list ml-2">{{ item.tag }}</span>
+        <div
+          class="image-container"
+          type="button"
+          :data-bs-toggle="'modal'"
+          :data-bs-target="'#modalImage' + index"
+        >
+          <img class="image-gallery rounded-lg" :src="item.img" alt="" />
+          <div class="image-name">
+            <div class="text">
+              {{ item.caption }}
             </div>
           </div>
-          <img
-            class="panel-gradient"
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png"
-            alt=""
-          />
-          <img
-            class="panel-vingette"
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png"
-            alt=""
-          />
         </div>
-        <img class="panel-img" :src="item.img" alt="" />
-      </div>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        :id="'modal-image' + index"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-          <div class="modal-content bg-text">
-            <div class="modal-body">
-              <v-row>
-                <v-col lg="7" md="7" sm="6" cols="12">
-                  <img :src="item.img" width="100%" height="auto" class="rounded-lg" />
-                </v-col>
-
-                <v-col lg="5" md="5" sm="6" cols="12">
-                  <div class="d-flex justify-content-between align-start">
-                    <h1>
-                      {{ item.caption }}
-                    </h1>
-                    <button
-                      type="button"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ><i class="fa-solid fa-xmark fa-xl text-white"></i></button>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          :id="'modalImage' + index"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-text">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-7 col-md-7 col-sm-6 col-12">
+                    <img
+                      :src="item.img"
+                      width="100%"
+                      height="auto"
+                      class="rounded-lg"
+                    />
                   </div>
-                </v-col>
-              </v-row>
+
+                  <div class="col-lg-5 col-md-5 col-sm-6 col-12">
+                    <div class="d-flex justify-content-between align-start">
+                      <h1>{{ item.caption }}</h1>
+                      <button
+                        type="button"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                    </div>
+                    <div>
+                      <span class="tags-list">{{ item.tag }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,12 +90,14 @@ export default {
         {
           img: "https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/442498499_968559537970635_5720635124765594967_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_9kdtF2jiGUQ7kNvgFA4FHF&_nc_ht=scontent.fkkc2-1.fna&oh=00_AYClxn6F6iSYOUGFH7v98iT3Ne2Hfe7dPBPQxQrlgHyC1g&oe=664FA804",
           tag: "Infographic",
-          caption: "ขั้นตอนการยืม Labtop สำหรับนักศึกษาคณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น",
+          caption:
+            "ขั้นตอนการยืม Labtop สำหรับนักศึกษาคณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น",
         },
         {
           img: "https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/442418700_968559517970637_6123935461626819227_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h6E6khtpfwwQ7kNvgFgfyRu&_nc_ht=scontent.fkkc2-1.fna&oh=00_AYAhh7t22Sa9ItXAu5x79Ld0xhF3d_3ZEygEC3qmmsCkXg&oe=664F8A54",
           tag: "Infographic",
-          caption: "ช่องทางการติดต่อกลุ่มภาระงานด้านพัฒนานักศึกษา คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น",
+          caption:
+            "ช่องทางการติดต่อกลุ่มภาระงานด้านพัฒนานักศึกษา คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น",
         },
         {
           img: "https://scontent.fkkc2-1.fna.fbcdn.net/v/t39.30808-6/442424192_968559674637288_488088773518588233_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=J-8IO7O6k_gQ7kNvgFyDgD-&_nc_ht=scontent.fkkc2-1.fna&oh=00_AYBL2XbseH6yuwLOGvnVaoza67gLAglESRH3yvyYW6Rtxw&oe=664FA0E8",
@@ -135,6 +129,26 @@ export default {
           tag: "Infographic",
           caption: "ขั้นตอนการสมัครทุน ก/ข คณะวิทยาศาสตร์ มหาวิทยาลัยขอนแก่น",
         },
+        {
+          img: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/436000887_968764787950110_9003556959217990973_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HWf-RvuEb2wQ7kNvgGceRVI&_nc_oc=AdiXfndV_gY4rsENphzYpu1eDkaZyDaNprjqQjtutTyjJlYWc7uRjuznI_fFwcETJ5o&_nc_ht=scontent.fkkc3-1.fna&oh=00_AYAVKjBOOHbYeNHieYJyTJEfnJonAiynLckeGlVpQckzGg&oe=664FFCBE",
+          tag: "Infographic",
+          caption: "FRESHMAN 2020 01 - FACULTY OF SCIENCE, KKU",
+        },
+        {
+          img: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/436235522_968764951283427_4601286628691528258_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5FAxvRcciE8Q7kNvgENP5bf&_nc_ht=scontent.fkkc3-1.fna&oh=00_AYD5TcMFdz-E0yI_sS3QfkBoUmMrHZhzqRSb2P7ZEu-1uA&oe=664FE961",
+          tag: "Infographic",
+          caption: "FRESHMAN 2020 02 - FACULTY OF SCIENCE, KKU",
+        },
+        {
+          img: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/440955542_968764947950094_6436859115764390219_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=BlFGuVFsuagQ7kNvgExUTXQ&_nc_ht=scontent.fkkc3-1.fna&oh=00_AYBEFYwBXfn1r0pRTJx0ftNjjrtyXPVQB93t_gA0QwYIJQ&oe=664FE98A",
+          tag: "Infographic",
+          caption: "FRESHMAN 2020 03 - FACULTY OF SCIENCE, KKU",
+        },
+        {
+          img: "https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/441315962_968764944616761_8202123070746718037_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=y7PKkCrqor8Q7kNvgGSf37Q&_nc_ht=scontent.fkkc3-1.fna&oh=00_AYDMYxAz7xGVWt6ONgQRZe6o2N6kGxXN3mXDFwNIxN9THA&oe=664FE467",
+          tag: "Infographic",
+          caption: "FRESHMAN 2020 04 - FACULTY OF SCIENCE, KKU",
+        },
       ],
     };
   },
@@ -142,191 +156,13 @@ export default {
 </script>
 
 <style>
-.clear-fix {
-  clear: both;
-}
-
-.masonry-container {
-  width: 90vw; /* Adjusted for smaller screens */
-  position: relative;
-  margin: 0 auto;
-  margin-top: 12px;
-}
-
-.panel {
-  position: relative;
-  display: inline-block;
-  width: calc((90vw - 60px) / 3); /* Adjusted for smaller screens */
-  height: calc((90vw - 60px) / 3); /* Adjusted for smaller screens */
-  margin-left: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease-out;
-}
-
-.panel:hover {
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.55);
-  transition: all 0.2s ease-out;
-}
-
-.panel:nth-child(11n + 1),
-.panel:nth-child(11n + 4) {
-  margin-left: 0;
-}
-
-.panel:nth-child(11n + 4) {
-  width: calc(((90vw - 20px) / 3) * 2);
-  height: calc((90vw - 60px) / 3);
-}
-
-.panel:nth-child(11n + 6) {
-  margin-left: 0;
-  float: left;
-  width: calc((90vw - 60px) / 3);
-  height: calc(((90vw - 20px) / 3) * 2 - 8px);
-}
-
-.panel:nth-child(11n + 6) > .panel-wrapper > .panel-img {
-  transform: translateX(-25%);
-}
-
-.panel:nth-child(11n + 7) {
-  margin-left: 27px;
-  width: calc(((90vw - 20px) / 3) * 2);
-}
-
-.panel:nth-child(11n + 8) {
-  margin-left: 27px;
-}
-
-.panel:nth-child(11n + 9) {
-  float: none;
-}
-
-.panel:nth-child(11n + 10),
-.panel:nth-child(11n + 11) {
-  width: calc((90vw - 30px) / 2);
-}
-
-.panel-wrapper {
-  position: relative;
-  display: inline-block;
+.image-gallery {
   width: 100%;
-  height: 100%;
-  overflow: hidden !important;
-}
-
-.panel-overlay {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-
-.panel-overlay:hover {
-  opacity: 1;
-  transition: all 0.3s ease-out;
-}
-
-.panel-text {
-  position: absolute;
-  width: 80%;
-  height: 60px;
-  margin: 0 auto;
-  left: 25px;
-  bottom: 0;
-  z-index: 10;
-}
-
-.panel-title {
-  font-size: 1em;
-  font-weight: 300;
-  letter-spacing: 0;
-  color: #fff;
-}
-
-.panel-tags {
-  padding-top: 2px;
-}
-
-.tag-icon-img {
-  display: inline-block;
-  width: 10px;
-  height: auto;
-  transform: translateY(2px);
-}
-
-.tags-list {
-  font-size: 0.55em;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #fff;
-}
-
-.panel-gradient {
-  position: absolute;
-  width: 100%;
-  height: 65%;
-  bottom: 0;
-  opacity: 0.65;
-  z-index: 5;
-}
-
-.panel-vingette {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  opacity: 0.5;
-}
-
-.panel-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  margin: 0 auto;
-  min-width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
-  object-position: 100% 0%;
+  object-position: 0% 0%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
 }
-
-@media (max-width: 1200px) {
-  .panel {
-    width: calc((90vw - 40px) / 2);
-    height: calc((90vw - 40px) / 2);
-  }
-
-  .panel:nth-child(11n + 4),
-  .panel:nth-child(11n + 6),
-  .panel:nth-child(11n + 7) {
-    width: calc(90vw - 20px);
-    height: calc(90vw - 40px);
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .panel {
-    width: calc(90vw - 20px);
-    height: calc(90vw - 20px);
-    margin-left: 0;
-  }
-
-  .panel:nth-child(11n + 4),
-  .panel:nth-child(11n + 6),
-  .panel:nth-child(11n + 7) {
-    width: calc(90vw - 20px);
-    height: calc(90vw - 20px);
-    margin-left: 0;
-  }
-}
-
 </style>
