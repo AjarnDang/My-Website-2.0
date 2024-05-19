@@ -147,7 +147,7 @@ export default {
 }
 
 .masonry-container {
-  width: 80vw;
+  width: 90vw; /* Adjusted for smaller screens */
   position: relative;
   margin: 0 auto;
   margin-top: 12px;
@@ -156,8 +156,8 @@ export default {
 .panel {
   position: relative;
   display: inline-block;
-  width: calc((80vw - 60px) / 3);
-  height: calc((80vw - 60px) / 3);
+  width: calc((90vw - 60px) / 3); /* Adjusted for smaller screens */
+  height: calc((90vw - 60px) / 3); /* Adjusted for smaller screens */
   margin-left: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -170,21 +170,21 @@ export default {
   transition: all 0.2s ease-out;
 }
 
-.panel:nth-child(11n + 1) {
+.panel:nth-child(11n + 1),
+.panel:nth-child(11n + 4) {
   margin-left: 0;
 }
 
 .panel:nth-child(11n + 4) {
-  margin-left: 0;
-  width: calc(((80vw - 20px) / 3) * 2);
-  height: calc((80vw - 60px) / 3);
+  width: calc(((90vw - 20px) / 3) * 2);
+  height: calc((90vw - 60px) / 3);
 }
 
 .panel:nth-child(11n + 6) {
   margin-left: 0;
   float: left;
-  width: calc((80vw - 60px) / 3);
-  height: calc(((80vw - 20px) / 3) * 2 - 8px);
+  width: calc((90vw - 60px) / 3);
+  height: calc(((90vw - 20px) / 3) * 2 - 8px);
 }
 
 .panel:nth-child(11n + 6) > .panel-wrapper > .panel-img {
@@ -193,7 +193,7 @@ export default {
 
 .panel:nth-child(11n + 7) {
   margin-left: 27px;
-  width: calc(((80vw - 20px) / 3) * 2);
+  width: calc(((90vw - 20px) / 3) * 2);
 }
 
 .panel:nth-child(11n + 8) {
@@ -204,13 +204,9 @@ export default {
   float: none;
 }
 
-.panel:nth-child(11n + 10) {
-  margin-left: 0;
-  width: calc((80vw - 30px) / 2);
-}
-
+.panel:nth-child(11n + 10),
 .panel:nth-child(11n + 11) {
-  width: calc((80vw - 30px) / 2);
+  width: calc((90vw - 30px) / 2);
 }
 
 .panel-wrapper {
@@ -301,4 +297,36 @@ export default {
   object-fit: cover;
   object-position: 100% 0%;
 }
+
+@media (max-width: 1200px) {
+  .panel {
+    width: calc((90vw - 40px) / 2);
+    height: calc((90vw - 40px) / 2);
+  }
+
+  .panel:nth-child(11n + 4),
+  .panel:nth-child(11n + 6),
+  .panel:nth-child(11n + 7) {
+    width: calc(90vw - 20px);
+    height: calc(90vw - 40px);
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: calc(90vw - 20px);
+    height: calc(90vw - 20px);
+    margin-left: 0;
+  }
+
+  .panel:nth-child(11n + 4),
+  .panel:nth-child(11n + 6),
+  .panel:nth-child(11n + 7) {
+    width: calc(90vw - 20px);
+    height: calc(90vw - 20px);
+    margin-left: 0;
+  }
+}
+
 </style>

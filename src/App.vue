@@ -145,13 +145,20 @@
 
 <script>
 // let year = new Date().getFullYear()
+import Vue from 'vue';
+import VueMeta from 'vue-meta'
+
+Vue.use(VueMeta);
 
 export default {
   name: "App",
 
-  data: () => ({
-    //
-  }),
+  metaInfo: {
+    title: 'Banny',
+    link: [
+      { rel: 'icon', href: '/img/logo.png' }
+    ]
+  }
 };
 </script>
 
