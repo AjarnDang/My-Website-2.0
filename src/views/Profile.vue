@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="img-bg"></div>
+    <div :class="imgBgClass"></div>
     <div class="container">
       <div class="card-image d-lg-flex justify-content-md-center align-items-center">
         <v-img class="c-image" src="../assets/img/me.jpg" cover> </v-img>
@@ -157,17 +157,52 @@ export default {
   components: {
     CardSocial,
   },
+  data() {
+    return {
+      images: [
+        "https://wallpapers.com/images/hd/chamber-valorant-1920-x-1080-wallpaper-7sgbhq3hq14fp3r6.jpg",
+        "https://wallpaper.forfun.com/fetch/7d/7db1f396ee37c0ca9a12a4693de5be3b.jpeg",
+        "https://cdn.wallpapersafari.com/90/10/Y1c0Nu.png",
+        "https://images8.alphacoders.com/120/1202648.jpg",
+      ],
+    };
+  },
+  computed: {
+    randomImage() {
+      const randomIndex = Math.floor(Math.random() * this.images.length);
+      return this.images[randomIndex];
+    },
+    imgBgClass() {
+      return {
+        'img-bg': true,
+        'random-bg': true,
+      };
+    }
+  },
+  mounted() {
+    this.setRandomBackgroundImage();
+  },
+  methods: {
+    setRandomBackgroundImage() {
+      const randomIndex = Math.floor(Math.random() * this.images.length);
+      const selectedImage = this.images[randomIndex];
+      document.querySelector('.img-bg').style.backgroundImage = `url(${selectedImage})`;
+    }
+  },
+  watch: {
+    images: 'setRandomBackgroundImage'
+  }
 };
 </script>
 
-<style>
+<style scoped>
 .img-bg {
   height: 320px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 0% 0%;
   position: relative;
   opacity: 0.3;
-  background-image: url("https://cdn.wallpapersafari.com/86/2/bfFe9r.jpeg");
 }
 
 .card-image {
