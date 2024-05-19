@@ -13,11 +13,11 @@
           :data-bs-target="'#modalImage' + index"
         >
           <img class="image-gallery rounded-lg" :src="item.img" alt="" />
-          <div class="image-name">
+          <!-- <div class="image-name">
             <div class="text">
               {{ item.caption }}
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- Modal -->
