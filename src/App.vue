@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <RouterLink to="/" class="nav-link">Home</RouterLink>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <RouterLink to="/Works" class="nav-link">Works</RouterLink>
+              <a href="/Works" class="nav-link">Works</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a
@@ -44,7 +44,7 @@
               </ul>
             </li> -->
             <li class="nav-item">
-              <RouterLink to="/profile" class="nav-link">About me</RouterLink>
+              <a href="/profile" class="nav-link">About me</a>
             </li>
             <li class="nav-item">
               <a href="https://viki-iota.vercel.app/" target="_blank" class="nav-link">Valorant Store <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
@@ -53,13 +53,13 @@
           <div class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <RouterLink to="/contact"
+                <a href="/contact"
                   class="nav-link btn btn-outline-primary"
-                  >Contact me</RouterLink
+                  >Contact me</a
                 >
               </li>
               <!-- <li class="nav-item">
-                <RouterLink to="/support" class="nav-link btn btn-primary ml-lg-2 ml-md-2 mt-md-0 mt-2">Support me</RouterLink>
+                <a href="/support" class="nav-link btn btn-primary ml-lg-2 ml-md-2 mt-md-0 mt-2">Support me</a>
               </li> -->
             </ul>
           </div>
