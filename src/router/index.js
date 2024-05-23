@@ -31,46 +31,6 @@ const routes = [
     component: () => import('../views/Login.vue')
   },
   {
-    path: '/shop',
-    name: 'shop',
-    component: () => import('../views/Shop.vue')
-  },
-  {
-    path: '/allproduct',
-    name: 'allproduct',
-    component: () => import('../views/AllProduct.vue')
-  },
-  {
-    path: '/odin',
-    name: 'odin',
-    component: () => import('../views/Odin.vue')
-  },
-  {
-    path: '/vandal',
-    name: 'vandal',
-    component: () => import('../views/Vandal.vue')
-  },
-  {
-    path: '/phantom',
-    name: 'phantom',
-    component: () => import('../views/Phantom.vue')
-  },
-  {
-    path: '/operator',
-    name: 'operator',
-    component: () => import('../views/Operator.vue')
-  },
-  {
-    path: '/bundle',
-    name: 'bundle',
-    component: () => import('../views/Bundle.vue')
-  },
-  {
-    path: '/bundleDetail/:displayName',
-    name: 'BundleDetail',
-    component: () => import('../views/BundleDetail.vue')
-  },
-  {
     path: '/simple',
     name: 'simple',
     component: () => import('../views/Simple.vue')

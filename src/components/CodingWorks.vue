@@ -3,7 +3,7 @@
     <v-col
       cols="12"
       class="mb-3 px-0 rounded-lg"
-      v-for="(item, index) in coding"
+      v-for="(item, index) in paginatedCodingWorks"
       :key="index"
     >
       <v-card class="mx-auto bg-text" max-width="100%" outlined>
@@ -38,19 +38,41 @@
         </v-card-actions>
       </v-card>
     </v-col>
+    <v-pagination
+      v-model="currentPage"
+      :length="totalPages"
+      :total-visible="7"
+      @input="onPageChange"
+    ></v-pagination>
   </div>
 </template>
 
 <script>
-import { coding } from './Data';
+import { coding } from './WorksData';
 
 export default {
   name: "Works",
-
   data() {
     return {
-      coding,
+      coding: coding,
+      itemsPerPage: 6, // Adjust this as needed
+      currentPage: 1,
     };
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.coding.length / this.itemsPerPage);
+    },
+    paginatedCodingWorks() {
+      const start = (this.currentPage - 1) * this.itemsPerPage;
+      const end = start + this.itemsPerPage;
+      return this.coding.slice(start, end);
+    },
+  },
+  methods: {
+    onPageChange(page) {
+      this.currentPage = page;
+    },
   },
 };
 </script>

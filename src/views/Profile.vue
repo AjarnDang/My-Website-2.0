@@ -53,32 +53,31 @@
           <v-col lg="7" md="7" sm="6" cols="12">
             <v-card-text>
               <h6 class="text-white mb-5">Experiences</h6>
-              <div class="text-secondary">
-                <div class="mb-3">
-                  <p class="mb-0">Software Engineer</p>
-                  <p class="mb-0 text-secondary">
-                    INET (Internet Thailand PCL)
-                  </p>
-                  <p class="text-secondary">May 2024 - Present</p>
-                </div>
-                <div class="mb-3">
-                  <p class="mb-0">UX / UI Designer</p>
-                  <p class="mb-0 text-secondary">Zenith Comp Co,. LTd.</p>
-                  <p class="text-secondary">Nov 2023 - Apr 2024</p>
-                </div>
-                <div class="mb-3">
-                  <p class="mb-0">Developer</p>
-                  <p class="mb-0 text-secondary">AXONS Corporate</p>
-                  <p class="text-secondary">Jun 2023 - Oct 2023</p>
-                </div>
-                <div class="mb-3">
-                  <p class="mb-0">Developer (Internship)</p>
-                  <p class="mb-0 text-secondary">
-                    Metro Systems Corporation Public Limited Company
-                  </p>
-                  <p class="text-secondary">Nov 2022 - Mar 2024</p>
-                </div>
-              </div>
+              <v-timeline align-top dense dark>
+                <v-timeline-item
+                  v-for="tag in experiences"
+                  :key="tag"
+                  :color="tag.color"
+                  small
+                >
+                  <div>
+                    <div class="font-weight-normal">
+                      <strong>{{ tag.role }}</strong>
+                    </div>
+                    <a
+                      :href="tag.link"
+                      target="_blank"
+                      class="mb-0 text-secondary text-decoration-none"
+                    >
+                      {{ tag.company }}
+                      <i
+                        class="fa-solid fa-arrow-up-right-from-square text-secondary fa-xs ml-1"
+                      ></i>
+                    </a>
+                    <div>{{ tag.startDate }} - {{ tag.endDate }}</div>
+                  </div>
+                </v-timeline-item>
+              </v-timeline>
             </v-card-text>
 
             <v-divider class="mx-4 mb-1 mt-0"></v-divider>
@@ -125,37 +124,37 @@
 
             <v-card-text>
               <div class="d-flex flex-wrap gap-3">
-              <a
-                href="https://www.canva.com/design/DAF7pgel6sY/z15YcMNeyOScFbvzsahY2w/view"
-                class="btn btn-primary p-2 d-inline-flex align-center"
-                target="_blank"
-              >
-                <div>
-                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
-                  <h6 class="mt-5 text-dark text-file">Resume</h6>
-                </div>
-              </a>
-              <a
-                href="https://www.canva.com/design/DAF_eA3VojU/cHtkVH1YOjMbjPsMhOmVFQ/view"
-                class="btn btn-primary p-2 d-inline-flex align-center"
-                target="_blank"
-              >
-                <div>
-                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
-                  <h6 class="mt-5 text-dark text-file">Portfilio</h6>
-                </div>
-              </a>
-              <a
-                href="https://www.canva.com/design/DAGDJmYdoWM/s_DqVCQfUnYLBc1cAdqqnA/view"
-                class="btn btn-primary p-2 d-inline-flex align-center"
-                target="_blank"
-              >
-                <div>
-                  <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
-                  <h6 class="mt-5 text-dark text-file">UX/UI Presentation</h6>
-                </div>
-              </a>
-            </div>
+                <a
+                  href="https://www.canva.com/design/DAF7pgel6sY/z15YcMNeyOScFbvzsahY2w/view"
+                  class="btn btn-primary p-2 d-inline-flex align-center"
+                  target="_blank"
+                >
+                  <div>
+                    <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                    <h6 class="mt-5 text-dark text-file">Resume</h6>
+                  </div>
+                </a>
+                <a
+                  href="https://www.canva.com/design/DAF_eA3VojU/cHtkVH1YOjMbjPsMhOmVFQ/view"
+                  class="btn btn-primary p-2 d-inline-flex align-center"
+                  target="_blank"
+                >
+                  <div>
+                    <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                    <h6 class="mt-5 text-dark text-file">Portfilio</h6>
+                  </div>
+                </a>
+                <a
+                  href="https://www.canva.com/design/DAGDJmYdoWM/s_DqVCQfUnYLBc1cAdqqnA/view"
+                  class="btn btn-primary p-2 d-inline-flex align-center"
+                  target="_blank"
+                >
+                  <div>
+                    <i class="fa-solid fa-file-pdf fa-2xl text-dark"></i>
+                    <h6 class="mt-5 text-dark text-file">UX/UI Presentation</h6>
+                  </div>
+                </a>
+              </div>
             </v-card-text>
           </v-col>
         </v-row>
@@ -166,6 +165,12 @@
 
 <script>
 import CardSocial from "../components/CardSocial.vue";
+import {
+  skills,
+  tools,
+  strengths,
+  experiences,
+} from "@/components/ProfileData";
 
 export default {
   components: {
@@ -179,40 +184,10 @@ export default {
         "https://cdn.wallpapersafari.com/90/10/Y1c0Nu.png",
         "https://images8.alphacoders.com/120/1202648.jpg",
       ],
-      skills: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "PHP",
-        "SQL",
-        "React.js",
-        "Node.js",
-        "Next.js",
-        "Vue.js",
-        ".NET MVC",
-      ],
-      tools: [
-        "Visual Studio Code",
-        "Figma",
-        "Canva",
-        "Adoba Photoshop",
-        "Adobe Premier Pro",
-        "Adobe XD",
-        "Git",
-        "MongoDB",
-        "MySQL",
-        "DBeaver",
-      ],
-      strengths: [
-        "Open Minded",
-        "Pay attention to details",
-        "Prioritize",
-        "Critical-Thinking",
-        "Communication",
-        "Work as Team",
-        "Flexible",
-        "Emphatize",
-      ],
+      skills,
+      tools,
+      strengths,
+      experiences,
     };
   },
   computed: {

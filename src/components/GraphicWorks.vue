@@ -3,7 +3,7 @@
     <div class="row">
       <div
         class="col-lg-3 col-md-4 col-sm-6 col-6"
-        v-for="(item, index) in images"
+        v-for="(item, index) in paginatedImages"
         :key="index"
       >
         <div
@@ -13,11 +13,6 @@
           :data-bs-target="'#modalImage' + index"
         >
           <img class="image-gallery rounded-lg" :src="item.img" alt="" />
-          <!-- <div class="image-name">
-            <div class="text">
-              {{ item.caption }}
-            </div>
-          </div> -->
         </div>
 
         <!-- Modal -->
@@ -77,11 +72,18 @@
         </div>
       </div>
     </div>
+    <v-pagination
+      class="mt-8"
+      v-model="currentPage"
+      :length="totalPages"
+      :total-visible="7"
+      @input="onPageChange"
+    ></v-pagination>
   </div>
 </template>
 
 <script>
-import { images } from "./Data";
+import { images } from "./WorksData";
 
 export default {
   name: "Works",
@@ -89,7 +91,24 @@ export default {
   data() {
     return {
       images, // Use the imported images array
+      itemsPerPage: 16, // Adjust the number of items per page as needed
+      currentPage: 1,
     };
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.images.length / this.itemsPerPage);
+    },
+    paginatedImages() {
+      const start = (this.currentPage - 1) * this.itemsPerPage;
+      const end = start + this.itemsPerPage;
+      return this.images.slice(start, end);
+    },
+  },
+  methods: {
+    onPageChange(page) {
+      this.currentPage = page;
+    },
   },
 };
 </script>
