@@ -2,7 +2,7 @@
   <div>
     <div class="row">
       <div
-        class="col-lg-3 col-md-4 col-sm-6 col-12"
+        class="col-lg-3 col-md-4 col-sm-6 col-6"
         v-for="(item, index) in images"
         :key="index"
       >
@@ -158,11 +158,18 @@ export default {
 <style>
 .image-gallery {
   width: 100%;
+  min-height: 200px;
   height: 400px;
   object-fit: cover;
   object-position: 0% 0%;
   transition: .5s ease;
   backface-visibility: hidden;
   opacity: 1;
+}
+
+@media only screen and (max-width: 964px) {
+  .image-gallery {
+    height: 250px;
+  }
 }
 </style>
