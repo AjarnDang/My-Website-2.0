@@ -29,7 +29,7 @@
                 class="text-primary text-decoration-none"
                 target="_blank"
               >
-                College of Computing </a
+                College of Computing</a
               >. Specialize in Frontend Development and UX / UI Design and
               Graphic Design.
             </p>
@@ -160,25 +160,25 @@ export default {
         {
           header: "Best Quality",
           detail:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium cum temporibus libero adipisci ullam",
+            "Experience unparalleled excellence with my top-tier contents. I prioritize quality to ensure robust, reliable, and high-performing systems tailored to your needs.",
           icon: "<i class='fa-solid fa-certificate fa-2xl mb-4 rotate text-primary'></i>",
         },
         {
           header: "Ready to use",
           detail:
-            "Architecto rerum esse eos sed? Sint facere ducimus dolorum minima voluptates",
+            "Get up and running quickly with our user-friendly, pre-configured contents. Designed for immediate deployment, my works could save you time and effort.",
           icon: "<i class='fa-solid fa-hourglass-half fa-2xl mb-4 rotate text-primary'></i>",
         },
         {
           header: "Fresh content",
           detail:
-            "Dolor sit amet consectetur adipisicing elit. Qui hic ea a impedit quod laudantium quaerat reiciendis corrupti, numquam cupiditate inventore",
+            "Stay ahead with the latest updates and innovations in technology. My content is constantly refreshed to provide you with the newest trends and insights",
           icon: "<i class='fa-solid fa-box-open fa-2xl start-end mb-4 text-primary'></i>",
         },
         {
           header: "Discover best practice",
           detail:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam necessitatibus",
+            "Unlock industry secrets and proven methodologies. My content guides you through best practices to optimize your IT processes, ensuring efficiency and success.",
           icon: "<i class='fa-regular fa-compass fa-2xl mb-4 rotate text-primary'></i>",
         },
       ],
