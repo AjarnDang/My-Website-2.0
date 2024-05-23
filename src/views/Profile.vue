@@ -26,20 +26,20 @@
                   Comes from Bangkok, Thailand. I graduated from
                   <a
                     href="https://khonkaenuniversity.in.th/"
-                    class="text-primary"
+                    class="text-primary text-decoration-none"
                     target="_blank"
                     >Khon Kaen University</a
                   >,
                   <a
                     href="https://computing.kku.ac.th/content/branch/37"
-                    class="text-primary"
+                    class="text-primary text-decoration-none"
                     target="_blank"
                   >
                     Information Technology Major </a
                   >,
                   <a
                     href="https://computing.kku.ac.th/index"
-                    class="text-primary"
+                    class="text-primary text-decoration-none"
                     target="_blank"
                   >
                     College of Computing </a

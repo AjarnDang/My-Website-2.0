@@ -183,11 +183,15 @@ a.text-primary:hover {
 }
 
 footer a.nav-link,
+footer span.nav-link,
+footer span,
+footer span i,
 footer a.nav-link i {
   color: var(--gray);
 }
 
-footer a.nav-link i:hover {
+footer a.nav-link i:hover,
+footer span:hover {
   color: var(--white);
 }
 

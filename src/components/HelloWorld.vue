@@ -9,32 +9,48 @@
               <h1 class="text-primary">Thornthan</h1>
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it.
+              Hi, my name is Thornthan Jomtharak. My nickname is Brand. Comes
+              from Bangkok, Thailand. I graduated from
+              <a
+                href="https://khonkaenuniversity.in.th/"
+                class="text-primary text-decoration-none"
+                target="_blank"
+                >Khon Kaen University</a
+              >,
+              <a
+                href="https://computing.kku.ac.th/content/branch/37"
+                class="text-primary text-decoration-none"
+                target="_blank"
+              >
+                Information Technology Major </a
+              >,
+              <a
+                href="https://computing.kku.ac.th/index"
+                class="text-primary text-decoration-none"
+                target="_blank"
+              >
+                College of Computing </a
+              >. Specialize in Frontend Development and UX / UI Design and
+              Graphic Design.
             </p>
-          
-          <div class="my-10">
-            <v-btn class="btn btn-primary px-5 py-3" href="/profile">Explore more</v-btn>
-            <v-btn
-            color="transparent"
-              class="text-white shadow-none d-inline-flex align-items-center py-3 mx-2"
-              href="/works"
-            >
-              <i class="fa-solid fa-star fa-lg mx-2"></i>
-              Featured Projects
-            </v-btn>
+
+            <div class="my-10">
+              <v-btn class="btn btn-primary px-5 py-3" href="/profile"
+                >Explore more</v-btn
+              >
+              <v-btn
+                color="transparent"
+                class="text-white shadow-none d-inline-flex align-items-center py-3 mx-2"
+                href="/works"
+              >
+                <i class="fa-solid fa-star fa-lg mx-2"></i>
+                Featured Projects
+              </v-btn>
+            </div>
           </div>
         </div>
-        </div>
         <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
-        <!-- https://playvalorant.com/static/agents-group-31d7ce5a3637e45d8b25d2fd03159e6c.png -->
-          <img
-            src="../assets/img/me-2.png"
-            alt="Hero Image"
-            width="90%"
-          />
+          <img src="../assets/img/me-2.png" alt="Hero Image" width="90%" />
         </div>
       </div>
 
@@ -44,25 +60,15 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div
+            v-for="(tag, index) in images"
+            :key="index"
+            :class="['carousel-item', { active: index === 0 }]"
+          >
             <img
-              src="../assets/img/chamber.png"
+              :src="tag.img"
               class="d-block w-100 carousel-image"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/img/rank.png"
-              class="d-block w-100 carousel-image"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="../assets/img/chamber-2.png"
-              class="d-block w-100 carousel-image"
-              alt="..."
+              :alt="tag.alt"
             />
           </div>
         </div>
@@ -97,39 +103,14 @@
         <p>With my various content of Ideas, Styles and Projects.</p>
       </div>
       <div class="row my-5">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
-          <i
-            class="fa-solid fa-certificate fa-2xl mb-4 rotate text-primary"
-          ></i>
-          <h3 class="mt-4">Best Quality</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium cum temporibus libero adipisci ullam,
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
-          <i
-            class="fa-solid fa-hourglass-half fa-2xl mb-4 rotate text-primary"
-          ></i>
-          <h3 class="mt-4">Ready to use</h3>
-          <p>
-            Architecto rerum esse eos sed? Sint facere ducimus dolorum minima voluptates 
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
-          <i
-            class="fa-solid fa-box-open fa-2xl start-end mb-4 text-primary"
-          ></i>
-          <h3 class="mt-4">Fresh content</h3>
-          <p>
-            Dolor sit amet consectetur adipisicing elit. Qui hic ea a impedit quod laudantium quaerat reiciendis corrupti, numquam cupiditate inventore
-          </p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4">
-          <i class="fa-regular fa-compass fa-2xl mb-4 rotate text-primary"></i>
-          <h3 class="mt-4">Discover best practice</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam necessitatibus,
-          </p>
+        <div
+          class="col-lg-3 col-md-6 col-sm-6 col-12 pb-4"
+          v-for="(item, index) in content"
+          :key="index"
+        >
+          <div v-html="item.icon"></div>
+          <h3 class="mt-4">{{ item.header }}</h3>
+          <p>{{ item.detail }}</p>
         </div>
       </div>
     </div>
@@ -140,7 +121,9 @@
           <div class="col-lg-7 col-md-6 col-sm-12 mb-4">
             <p>Let's be friend, get to know me.</p>
             <h2>Connect with me at your fingertips</h2>
-            <v-btn href="/contact" class="btn btn-primary mt-3">Connect me</v-btn>
+            <v-btn href="/contact" class="btn btn-primary mt-3"
+              >Connect me</v-btn
+            >
           </div>
           <div class="col-lg-5 col-md-6 col-sm-12 mb-4 text-center">
             <img
@@ -157,5 +140,49 @@
 <script>
 export default {
   name: "HelloWorld",
+  data() {
+    return {
+      images: [
+        {
+          img: require("../assets/img/chamber.png"),
+          alt: "Chamber Valorant",
+        },
+        {
+          img: require("../assets/img/rank.png"),
+          alt: "Ascendant Rank",
+        },
+        {
+          img: require("../assets/img/chamber-2.png"),
+          alt: "Chamber Valorant",
+        },
+      ],
+      content: [
+        {
+          header: "Best Quality",
+          detail:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium cum temporibus libero adipisci ullam",
+          icon: "<i class='fa-solid fa-certificate fa-2xl mb-4 rotate text-primary'></i>",
+        },
+        {
+          header: "Ready to use",
+          detail:
+            "Architecto rerum esse eos sed? Sint facere ducimus dolorum minima voluptates",
+          icon: "<i class='fa-solid fa-hourglass-half fa-2xl mb-4 rotate text-primary'></i>",
+        },
+        {
+          header: "Fresh content",
+          detail:
+            "Dolor sit amet consectetur adipisicing elit. Qui hic ea a impedit quod laudantium quaerat reiciendis corrupti, numquam cupiditate inventore",
+          icon: "<i class='fa-solid fa-box-open fa-2xl start-end mb-4 text-primary'></i>",
+        },
+        {
+          header: "Discover best practice",
+          detail:
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam necessitatibus",
+          icon: "<i class='fa-regular fa-compass fa-2xl mb-4 rotate text-primary'></i>",
+        },
+      ],
+    };
+  },
 };
 </script>

@@ -47,14 +47,19 @@
               <a href="/profile" class="nav-link">About me</a>
             </li>
             <li class="nav-item">
-              <a href="https://viki-iota.vercel.app/" target="_blank" class="nav-link">Valorant Store <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
+              <a
+                href="https://viki-iota.vercel.app/"
+                target="_blank"
+                class="nav-link"
+                >Valorant Store
+                <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i
+              ></a>
             </li>
           </ul>
           <div class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="/contact"
-                  class="nav-link btn btn-outline-primary"
+                <a href="/contact" class="nav-link btn btn-outline-primary"
                   >Contact me</a
                 >
               </li>
@@ -75,68 +80,108 @@
       <div class="container">
         <div class="d-flex pt-8 pb-10 justify-content-between flex-wrap">
           <div class="mb-3">
-            <p>CONTENT</p>
-            <a href="#" class="nav-link"> Discover </a>
-            <a href="#" class="nav-link"> Poppular Content </a>
-            <a href="#" class="nav-link"> New Trand </a>
-            <a href="#" class="nav-link"> Categories </a>
+            <p>WORKS</p>
+            <a href="/works" class="nav-link"> Coding </a>
+            <a href="/works" class="nav-link"> UX / UI Design </a>
+            <a href="/works" class="nav-link"> Graphic Design </a>
           </div>
           <div class="mb-3">
-            <p>INFOMATION</p>
-            <a href="#" class="nav-link"> Pricing </a>
-            <a href="#" class="nav-link"> Sell Content </a>
-            <a href="#" class="nav-link"> Jobs </a>
-            <a href="#" class="nav-link"> Our Guideline </a>
+            <p>ABOUT ME</p>
+            <a href="/profile" class="nav-link"> About me </a>
+            <a
+              href="https://www.canva.com/design/DAF7pgel6sY/z15YcMNeyOScFbvzsahY2w/view"
+              target="_blank"
+              class="nav-link"
+            >
+              Resume
+            </a>
+            <a
+              href="https://www.canva.com/design/DAF_eA3VojU/cHtkVH1YOjMbjPsMhOmVFQ/view"
+              target="_blank"
+              class="nav-link"
+            >
+              Portfolio
+            </a>
+            <a
+              href="https://www.canva.com/design/DAGDJmYdoWM/s_DqVCQfUnYLBc1cAdqqnA/view"
+              target="_blank"
+              class="nav-link"
+            >
+              Presentation
+            </a>
           </div>
           <div class="mb-3">
-            <p>ABOUT US</p>
-            <a href="#" class="nav-link"> About us </a>
-            <a href="#" class="nav-link"> Privacy Policy </a>
-            <a href="#" class="nav-link"> User Agreement </a>
-            <a href="#" class="nav-link"> Cookies Policy </a>
-            <a href="#" class="nav-link"> Contact us </a>
-          </div>
-          <div class="mb-3">
-            <p>MEDIA & ARTICLES</p>
-            <a href="#" class="nav-link"> News </a>
-            <a href="#" class="nav-link"> Articles </a>
-            <a href="#" class="nav-link"> Blogs </a>
-            <a href="#" class="nav-link"> Annoucements </a>
-            <a href="#" class="nav-link"> FAQs </a>
-            <a href="#" class="nav-link"> Manual </a>
+            <p>CONTACT ME</p>
+            <!-- <a href="mailto:torntan.j@gmail.com" class="nav-link">
+              <i class="fa-solid fa-envelope"
+                ><span class="ml-2">torntan.j@gmail.com</span></i
+              >
+            </a> -->
+            <a href="mailto:torntan.j@gmail.com" class="nav-link"
+              >torntan.j@gmail.com</a
+            >
+            <!-- <span class="nav-link"
+              ><i class="fa-solid fa-phone"
+                ><span class="ml-2">+66 063 386 4998</span></i
+              ></span
+            > -->
+            <span class="nav-link">+66 063 386 4998</span>
           </div>
           <div class="mb-3">
             <p>SOCIALS</p>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-square-facebook fa-2xl mr-2"> </i>
-            </a>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-square-x-twitter fa-2xl mr-2"> </i>
-            </a>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-square-pinterest fa-2xl mr-2"> </i>
-            </a>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-square-instagram fa-2xl mr-2"> </i>
-            </a>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-square-youtube fa-2xl mr-2"> </i>
-            </a>
-            <a href="" class="nav-link d-inline">
-              <i class="fa-brands fa-linkedin fa-2xl"> </i>
-            </a>
-
-            <p class="mt-5 mb-3">
-              Get exclusive assets sent straight to your inbox
-            </p>
-            <v-btn class="btn btn-primary px-5">Sign up</v-btn>
+            <div class="d-flex align-center">
+              <a
+                href="https://www.twitch.tv/banny3633"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-twitch fa-2xl mr-3"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/brandthron44/"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-instagram fa-2xl mr-3"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/thornthan-jomtharak-b10403279/"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-linkedin fa-2xl mr-3"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC8T4F0fNvCg7nKxSbnPKBSg"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-youtube fa-2xl mr-3"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@banny3633"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-tiktok fa-2xl mr-3"></i>
+              </a>
+              <a
+                href="https://www.behance.net/torntanjomthar"
+                target="_blank"
+                class="nav-link d-inline"
+              >
+                <i class="fa-brands fa-behance fa-2xl"></i>
+              </a>
+            </div>
+            <p class="mt-5 mb-3">Get in touch with me at your finger tips.</p>
+            <v-btn class="btn btn-primary px-5" href="/contact">Contact</v-btn>
           </div>
         </div>
         <hr />
         <div
           class="text-secondary d-flex justify-content-center align-items-center flex-wrap mt-8 mb-5"
         >
-          Copyright © 2024. Thornthan Jomtharak.
+          Copyright © {{ currentDate() }}. Thornthan Jomtharak.
         </div>
       </div>
     </footer>
@@ -145,8 +190,8 @@
 
 <script>
 // let year = new Date().getFullYear()
-import Vue from 'vue';
-import VueMeta from 'vue-meta'
+import Vue from "vue";
+import VueMeta from "vue-meta";
 
 Vue.use(VueMeta);
 
@@ -154,11 +199,17 @@ export default {
   name: "App",
 
   metaInfo: {
-    title: 'Banny',
-    link: [
-      { rel: 'icon', href: '/img/logo.png' }
-    ]
-  }
+    title: "Banny",
+    link: [{ rel: "icon", href: "/img/logo.png" }],
+  },
+
+  methods: {
+    currentDate() {
+      const current = new Date();
+      const date = `${current.getFullYear()}`;
+      return date;
+    },
+  },
 };
 </script>
 
@@ -171,7 +222,8 @@ nav li.router-link-exact-active {
   cursor: pointer;
 }
 
-.v-application ul, .v-application ol {
+.v-application ul,
+.v-application ol {
   padding-left: 0;
 }
 </style>
