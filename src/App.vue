@@ -125,7 +125,7 @@
                 ><span class="ml-2">+66 063 386 4998</span></i
               ></span
             > -->
-            <span class="nav-link">+66 063 386 4998</span>
+            <!-- <span class="nav-link">+66 063 386 4998</span> -->
           </div>
           <div class="mb-3">
             <p>SOCIALS</p>
