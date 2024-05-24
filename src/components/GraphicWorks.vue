@@ -125,6 +125,17 @@ export default {
   opacity: 1;
 }
 
+.v-application .primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.theme--light.v-pagination .v-pagination__item {
+  background-color: var(--white);
+  color: var(--text);
+}
+
 @media only screen and (max-width: 964px) {
   .image-gallery {
     height: 250px;

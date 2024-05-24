@@ -87,4 +87,14 @@ export default {
   background-color: #2c2c2c;
   color: white;
 }
+.v-application .primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.theme--light.v-pagination .v-pagination__item {
+  background-color: var(--white);
+  color: var(--text);
+}
 </style>
