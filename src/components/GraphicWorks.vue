@@ -27,16 +27,7 @@
             <div class="modal-content bg-text">
               <div class="modal-body">
                 <div class="row">
-                  <div class="col-lg-7 col-md-7 col-sm-6 col-12">
-                    <img
-                      :src="item.img"
-                      width="100%"
-                      height="auto"
-                      class="rounded-lg"
-                    />
-                  </div>
-
-                  <div class="col-lg-5 col-md-5 col-sm-6 col-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="d-flex justify-content-between align-start">
                       <h1>{{ item.caption }}</h1>
                       <button
@@ -56,13 +47,19 @@
                           {{ item.tool }}
                         </v-chip>
                       </v-chip-group>
-                      <p class="mt-3">
+                      <img
+                        :src="item.img"
+                        width="100%"
+                        height="auto"
+                        class="rounded-lg mt-4"
+                      />
+                      <!-- <p class="mt-3">
                         Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Doloribus, dolore accusantium perspiciatis eum
                         dicta doloremque dignissimos, fuga quaerat facere
                         explicabo excepturi est provident quis! Voluptas a
                         architecto sint nulla temporibus.
-                      </p>
+                      </p> -->
                     </div>
                   </div>
                 </div>
