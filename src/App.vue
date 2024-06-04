@@ -226,4 +226,9 @@ nav li.router-link-exact-active {
 .v-application ol {
   padding-left: 0;
 }
+
+.v-pagination__item .v-pagination__item--active .primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
 </style>
